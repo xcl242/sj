@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>蜀锦文化</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+    body {
+    background-color: #FFFFFF;
+}
+    </style>
+    <link href="css/history.css" rel="stylesheet" type="text/css">
+</head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+ <!-- 修改后的导航栏代码 -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="45" height="46" alt=""/>&nbsp; 蜀锦文化</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav">
+            <span class="oi oi-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="../main_html/porduct.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">蜀锦产品</a></li>
+                <li class="nav-item"><a href="art.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">艺术长廊</a></li>
+                <li class="nav-item"><a href="../main_html/publicize.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">其它非遗&nbsp;</a></li>
+                
+                                           <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="user-dropdown">
+              <span id="username-display">
+                <!-- 用于显示用户名的元素 -->
+              </span>
+              <img id="avatar-display" src="../users_html/屏幕截图 2025-04-26 182655.png" alt="用户头像" width="30" height="30" style="border-radius: 50%; margin-left: 5px;">
+            </a>
+            <div class="dropdown-content">
+              <a href="login_signup.html" id="login-register-link">登录注册</a>
+              <a href="login_signup.html" id="logout-button">退出登录</a>
+              <a href="../users_html/index.html" id="change-avatar-button" onclick="changeAvatar()">个人界面</a>
+            </div>
+          </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <select id="language-select" onchange="changeLanguage()">
+                            <option value="chinese_simplified">简体中文</option>
+                            <option value="chinese_traditional">繁體中文</option>
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                            <option value="korean">Korean</option>
+                            <option value="russian">Russian</option>
+                            <option value="arabic">Arabic</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="dutch">Dutch</option>
+                        </select>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	  
+<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+<script>
+    translate.selectLanguageTag.show = false; // 不出现的select的选择语言
+    translate.service.use('client.edge'); // 设置机器翻译服务通道
+
+    function changeLanguage() {
+        const selectedLanguage = document.getElementById('language-select').value;
+        translate.changeLanguage(selectedLanguage);
+        translate.execute();
+        localStorage.setItem('selectedLanguage', selectedLanguage); // 保存选择的语言
+    }
+
+    // 页面加载时设置选择框的值和语言
+    document.addEventListener('DOMContentLoaded', function () {
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'chinese_simplified'; // 默认选择英文
+        document.getElementById('language-select').value = savedLanguage; // 设置选择框的值
+        translate.changeLanguage(savedLanguage); // 设置翻译语言
+        translate.execute(); // 执行翻译
+    });
+</script>
+	  <section class="home-slider js-fullheight owl-carousel">
+      <div class="slider-item js-fullheight" style="background-image:url(images/1.jpg);">
+      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+	          <div class="col-md-8 text-center ftco-animate mt-5">
+	          </div>
+	        </div>
+        </div>
+      </div>
+
+      <div class="slider-item js-fullheight" style="background-image:url(images/2.jpg);">
+      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+	          <div class="col-md-8 text-center ftco-animate mt-5">
+	          </div>
+	        </div>
+        </div>
+      </div>
+		  
+		        <div class="slider-item js-fullheight" style="background-image:url(images/bg_4.jpg);">
+      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+	          <div class="col-md-8 text-center ftco-animate mt-5">
+	          </div>
+	        </div>
+        </div>
+      </div>
+		  
+		  
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-about-section" id="about-section">
+    	<div class="container-fluid px-0">
+    		<div class="row d-md-flex text-wrapper">
+					<div class="one-half img" style="background-image: url('images/3.jpg');"></div>
+					<div class="one-half half-text d-flex justify-content-end align-items-center ftco-animate">
+						<div class="text-inner pl-md-5">
+              <h3 class="heading" ><span>蜀程</span> <span style="color: #FFFFFF">·千机纹变</span></h3>
+<p style="color: #FFFFFF; text-indent: 2em;">蜀锦，又称<strong style="color: #FED515">蜀缎</strong>，是中国四大名锦之一，以其独特的图案和精湛的工艺闻名于世。承载着千年的<strong style="color: #FED515">文化底蕴，</strong> 是中国传统纺织工艺的杰出代表。</p>
+          <p style="color: #FFFFFF; text-indent: 2em;">在八十年代、九十年代，蜀锦发展迅速，创造了许多具有民间传说图案的作品，如“龙凤呈祥”、“凤穿牡丹”、“双狮戏球”等。此外，还发展了“晚清三绝”，织出了“文君听琴”、“嫦娥奔月”、“月华”、“望江楼雨丝”等精品。 </p>
+              <ul class="my-4">
+              	<li style="color: #FFFFFF"><span class="ion-ios-checkmark-circle mr-2"></span> 雨丝锦</li>
+              	<li style="color: #FFFFFF"><span class="ion-ios-checkmark-circle mr-2"></span> 月华锦</li>
+              	<li style="color: #FFFFFF"><span class="ion-ios-checkmark-circle mr-2"></span> 铺地锦</li>
+              </ul>
+            </div>
+					</div>
+    		</div>
+    	</div>
+    </section>
+
+   <section class="ftco-counter" id="section-counter">
+    <div class="container-fluid px-0">
+        <div class="row no-gutters">
+            <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+                <div class="block-18 text-center py-5">
+                    <div class="text">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-users"></span>
+                        </div>
+                        <strong class="number" data-number="867">0</strong>
+                        <span>蜀锦技艺传承人</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+                <div class="block-18 text-center py-5">
+                    <div class="text">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-user"></span>
+                        </div>
+                        <strong class="number" data-number="126">0</strong>
+                        <span>蜀锦主题展览次数</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+                <div class="block-18 text-center py-5">
+                    <div class="text">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-money"></span>
+                        </div>
+                        <strong class="number" data-number="56890">0</strong>
+                        <span>蜀锦作品年销量</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+                <div class="block-18 text-center py-5">
+                    <div class="text">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-home"></span>
+                        </div>
+                        <strong class="number" data-number="312">0</strong>
+                        <span>蜀锦店铺数量</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		
+		<section class="ftco-section ftco-services-2" id="history-section">
+    <div class="container">
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <span class="subheading"  style="color: #FED515">蜀锦历史</span>
+                <h2 class="mb-4" style="color: #FFF">蜀锦文化 历史介绍</h2>
+                <p  style="color: #FFF">穿越千年时光，探寻蜀锦从起源到现代的传奇历程。</p>
+            </div>
+        </div>
+  <div class="row wrapper items">
+    <div class="item" tabindex="0" style="background-image: url(images/shujin_p1.jpg)">
+      <a href="history.html" class="btn btn-primary btn-sm mt-3 justify-content-md-center">起源阶段</a>
+    </div>
+    <div class="item" tabindex="0" style="background-image: url(images/shujin_p2.jpg)">
+	  <a href="history.html" class="btn btn-primary btn-sm mt-3 justify-content-md-center">初步发展</a></div>
+    <div class="item" tabindex="0" style="background-image: url(images/shujin_p3.jpg)">
+	  <a href="history.html" class="btn btn-primary btn-sm mt-3 justify-content-md-center">成熟阶段</a></div>
+    <div class="item" tabindex="0" style="background-image: url(images/shujin_p4.jpg)">
+	  <a href="history.html" class="btn btn-primary btn-sm mt-3 justify-content-md-center">鼎盛时期</a></div>
+    <div class="item" tabindex="0" style="background-image: url(images/shujin_p5.jpg)">
+	  <a href="history.html" class="btn btn-primary btn-sm mt-3 justify-content-md-center">继承发展</a></div>
+
+    <div class="item" tabindex="0" style="background-image: url(images/shujin_p6.jpg)">
+	  <a href="history.html" class="btn btn-primary btn-sm mt-3 justify-content-md-center">现代转型</a></div>
+    </div>
+    </div>
+    <style>
+      .service-item {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+      .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+      .icon-wrap {
+            margin-bottom: 10px;
+        }
+
+      .icon-wrap img {
+            width: 60px;
+            height: 60px;
+        }
+
+      .service-content h3 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+      .service-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+		</section>
+
+		<section class="ftco-section bg-light" id="craft-section">
+    <div class="container">
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <span class="subheading">蜀锦文化&nbsp;</span>
+                <h2 class="mb-4">蜀锦工艺解密</h2>
+                <p>跟随我们的脚步，一同揭开蜀锦这一古老工艺的神秘面纱。</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- 原材料准备 -->
+            <div class="col-md-4">
+                <div class="sermon-wrap ftco-animate">
+                    <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/materials.jpg);">
+                        <div class="text-content p-4 text-center">
+                            <span>工艺环节:</span>
+                            <h3>原材料准备</h3>
+                            <p class="">
+                                <a href="https://www.bilibili.com/video/BV1mu411K76E/?spm_id_from=333.337.search-card.all.click" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> 观看视频</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text pt-3 text-center">
+                        <h2 class="mb-0">原料的精挑细选</h2>
+                        <div class="meta">
+                            <p class="mb-0">
+                                蜀锦主要采用优质桑蚕丝，其纤维细长、柔韧且光泽好。同时，染色使用天然植物染料，如靛蓝、茜草等，赋予蜀锦独特的色彩和质感。
+                            </p>
+                        </div>
+                        <a href="craft-detail1.html" class="btn btn-primary btn-sm mt-3">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 纹样设计 -->
+            <div class="col-md-4">
+                <div class="sermon-wrap ftco-animate">
+                    <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/pattern-design.jpg);">
+                        <div class="text-content p-4 text-center">
+                            <span>工艺环节:</span>
+                            <h3>纹样设计</h3>
+                            <p class="">
+                                <a href="https://www.bilibili.com/video/BV1Q34y1N7aA/?spm_id_from=333.337.search-card.all.click&vd_source=3f2039d82a44c25a8b9c97ac1a4a2d22" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> 观看视频</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text pt-3 text-center">
+                        <h2 class="mb-0"><a href="craft-detail.html#pattern">传统与创新的交融</a></h2>
+                        <div class="meta">
+                            <p class="mb-0">
+                                蜀锦纹样题材广泛，有云纹、花卉纹等，蕴含着深厚文化寓意。设计师既传承传统，又结合现代审美，通过手绘或计算机辅助设计出精美图案。
+                            </p>
+                        </div>
+                        <a href="craft-detail2.html" class="btn btn-primary btn-sm mt-3">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 织造准备 -->
+            <div class="col-md-4">
+                <div class="sermon-wrap ftco-animate">
+                    <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/weaving-prep.jpg);">
+                        <div class="text-content p-4 text-center">
+                            <span>工艺环节:</span>
+                            <h3>织造准备</h3>
+                            <p class="">
+                                <a href="https://www.bilibili.com/video/BV1Tr4y177hV/?spm_id_from=333.337.search-card.all.click&vd_source=3f2039d82a44c25a8b9c97ac1a4a2d22" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> 观看视频</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text pt-3 text-center">
+                        <h2 class="mb-0"><a href="craft-detail.html#prep">严谨的前期工作</a></h2>
+                        <div class="meta">
+                            <p class="mb-0">
+                                牵经时，蚕丝需按设计穿过综框和筘齿，确保顺序和密度准确。装造则根据纹样安装提花装置，为后续织造奠定基础。
+                            </p>
+                        </div>
+                        <a href="craft-detail3.html" class="btn btn-primary btn-sm mt-3">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 手工织造 -->
+            <div class="col-md-4">
+                <div class="sermon-wrap ftco-animate">
+                    <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/hand-weaving.jpg);">
+                        <div class="text-content p-4 text-center">
+                            <span>工艺环节:</span>
+                            <h3>手工织造</h3>
+                            <p class="">
+                                <a href="https://www.bilibili.com/video/BV1UV4y1i7gu/?spm_id_from=333.337.search-card.all.click&vd_source=3f2039d82a44c25a8b9c97ac1a4a2d22" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> 观看视频</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text pt-3 text-center">
+                        <h2 class="mb-0"><a href="craft-detail.html#weaving">指尖上的艺术</a></h2>
+                        <div class="meta">
+                            <p class="mb-0">
+                                织工脚踏踏板控制综框升降，用梭子引入纬丝，再用筘打紧。每一个动作都精准细致，将丝线织就成精美的蜀锦。
+                            </p>
+                        </div>
+                        <a href="craft-detail4.html" class="btn btn-primary btn-sm mt-3">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 提花工艺 -->
+            <div class="col-md-4">
+                <div class="sermon-wrap ftco-animate">
+                    <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/jacquard.jpg);">
+                        <div class="text-content p-4 text-center">
+                            <span>工艺环节:</span>
+                            <h3>提花工艺</h3>
+                            <p class="">
+                                <a href="https://www.bilibili.com/video/BV1mF411B7FP/?spm_id_from=333.337.search-card.all.click" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> 观看视频</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text pt-3 text-center">
+                        <h2 class="mb-0"><a href="craft-detail.html#jacquard">复杂的技艺精髓</a></h2>
+                        <div class="meta">
+                            <p class="mb-0">
+                                提花工拉动花本丝线控制经丝起落，织出复杂精美的图案。这是蜀锦工艺的核心，展现了工匠的高超技艺。
+                            </p>
+                        </div>
+                        <a href="craft-detail5.html" class="btn btn-primary btn-sm mt-3">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 后期整理 -->
+            <div class="col-md-4">
+                <div class="sermon-wrap ftco-animate">
+                    <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/finishing.jpg);">
+                        <div class="text-content p-4 text-center">
+                            <span>工艺环节:</span>
+                            <h3>后期整理</h3>
+                            <p class="">
+                                <a href="https://www.bilibili.com/video/BV1X3S7YAEKy/?spm_id_from=333.337.search-card.all.click" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> 观看视频</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text pt-3 text-center">
+                        <h2 class="mb-0"><a href="craft-detail.html#finishing">完美的最后呈现</a></h2>
+                        <div class="meta">
+                            <p class="mb-0">
+                                对织好的蜀锦进行全面检验，修复瑕疵。通过熨烫使其平整挺括，增强光泽和手感。
+                            </p>
+                        </div>
+                        <a href="craft-detail6.html" class="btn btn-primary btn-sm mt-3">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	  </section>
+<!-- 背景图片部分 -->
+<section class="ftco-intro img" id="events-section" style="background-image: url(images/shujin-1.jpg); position: relative; background-size: cover; background-position: center; height: 300px; display: flex; align-items: center; justify-content: center;">
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4);"></div>
+    <div class="container" style="width: 90%; max-width: 1200px; margin: 0 auto;">
+        <div class="row" style="display: flex; flex-wrap: wrap; margin: 0 -15px;">
+            <!-- 可添加一些标题或标语 -->
+        </div>
+    </div>
+</section>
+
+<!-- 活动列表部分 -->
+<section class="ftco-section bg-light ftco-event" id="activity-section">
+    <div class="container-fluid px-4 ftco-to-top" style="width: 90%; max-width: 1200px; margin: 0 auto; padding: 60px 0;">
+        <div class="row justify-content-center pb-5" style="display: flex; flex-wrap: wrap; justify-content: center; padding-bottom: 30px; margin: 0 -15px;">
+            <div class="col-md-12 heading-section text-center ftco-animate" style="flex: 0 0 100%; max-width: 100%; padding: 0 15px; text-align: center;">
+                <span class="subheading" style="display: block; font-size: 18px; color: #a87d32; font-weight: 600; margin-bottom: 10px;">蜀锦文化&nbsp;</span>
+                <h2 class="mb-5" style="font-size: 36px; color: #333; margin: 0 0 30px;">蜀锦文化传承活动</h2>
+            </div>
+        </div>
+        <div class="row" style="display: flex; flex-wrap: wrap; margin: 0 -15px;">
+            <!-- 蜀锦历史文化展 -->
+            <div class="col-md-12 col-lg-6 col-xl-4" style="padding: 0 15px; box-sizing: border-box; flex: 0 0 100%; max-width: 100%;">
+                <div class="event-wrap d-flex ftco-animate" style="display: flex; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 30px; transition: transform 0.3s ease;">
+                    <div class="img" style="background-image: url(images/cdumu.jpg); background-size: cover; background-position: center; height: 200px; flex: 0 0 40%;"></div>
+                    <div class="text p-4 d-flex align-items-center" style="padding: 20px; flex: 0 0 60%;">
+                        <div>
+                            <span class="time" style="display: block; font-size: 14px; color: #777; margin-bottom: 10px;">2024年10月1日 - 2024年10月31日</span>
+                            <h3 style="font-size: 22px; color: #333; margin-bottom: 15px;"><a href="#" style="color: #333; text-decoration: none;">蜀锦历史文化展</a></h3>
+                            <div class="meta">
+                                <p style="font-size: 14px; color: #777; margin-bottom: 5px;"><span class="icon-calendar mr-1"></span> 主办单位: <a href="https://cdmuseum.com/" style="color: #a87d32; text-decoration: none;">成都博物馆</a></p>
+                                <p style="font-size: 14px; color: #777; margin-bottom: 5px;"><span class="icon-location"></span> 四川省成都市青羊区小河街1号</p>
+                                <p class="mb-0" style="margin-bottom: 0;"><a href="traditional.html" class="btn btn-primary" style="display: inline-block; background-color: #a87d32; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 15px; transition: background-color 0.3s ease;">更多资讯</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 蜀锦手工织造体验活动 -->
+            <div class="col-md-12 col-lg-6 col-xl-4" style="padding: 0 15px; box-sizing: border-box; flex: 0 0 100%; max-width: 100%;">
+                <div class="event-wrap d-flex ftco-animate" style="display: flex; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 30px; transition: transform 0.3s ease;">
+                    <div class="img" style="background-image: url(images/cdjxmu.jpg); background-size: cover; background-position: center; height: 200px; flex: 0 0 40%;"></div>
+                    <div class="text p-4 d-flex align-items-center" style="padding: 20px; flex: 0 0 60%;">
+                        <div>
+                            <span class="time" style="display: block; font-size: 14px; color: #777; margin-bottom: 10px;">2025年2月15日 14:00 - 17:00</span>
+                            <h3 style="font-size: 22px; color: #333; margin-bottom: 15px;"><a href="traditional.html" style="color: #333; text-decoration: none;">蜀锦手工织造体验活动</a></h3>
+                            <div class="meta">
+                                <p style="font-size: 14px; color: #777; margin-bottom: 5px;"><span class="icon-calendar mr-1"></span> 主办单位: <a href="http://www.sjzxmuseum.com/" style="color: #a87d32; text-decoration: none;">蜀锦织绣博物馆</a></p>
+                                <p style="font-size: 14px; color: #777; margin-bottom: 5px;"><span class="icon-location"></span> 四川省成都市草堂东路2号</p>
+                                <p class="mb-0" style="margin-bottom: 0;"><a href="#" class="btn btn-primary" style="display: inline-block; background-color: #a87d32; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 15px; transition: background-color 0.3s ease;">更多资讯</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 蜀锦文化国际研讨会 -->
+            <div class="col-md-12 col-lg-6 col-xl-4" style="padding: 0 15px; box-sizing: border-box; flex: 0 0 100%; max-width: 100%;">
+                <div class="event-wrap d-flex ftco-animate" style="display: flex; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 30px; transition: transform 0.3s ease;">
+                    <div class="img" style="background-image: url(images/scuniart.jpg); background-size: cover; background-position: center; height: 200px; flex: 0 0 40%;"></div>
+                    <div class="text p-4 d-flex align-items-center" style="padding: 20px; flex: 0 0 60%;">
+                        <div>
+                            <span class="time" style="display: block; font-size: 14px; color: #777; margin-bottom: 10px;">2025年5月10日 - 2025年5月11日</span>
+                            <h3 style="font-size: 22px; color: #333; margin-bottom: 15px;"><a href="traditional.html" style="color: #333; text-decoration: none;">蜀锦文化国际研讨会</a></h3>
+                            <div class="meta">
+                                <p style="font-size: 14px; color: #777; margin-bottom: 5px;"><span class="icon-calendar mr-1"></span> 主办单位: <a href="http://art.scu.edu.cn/index.htm" style="color: #a87d32; text-decoration: none;">四川大学艺术学院</a></p>
+                                <p style="font-size: 14px; color: #777; margin-bottom: 5px;"><span class="icon-location"></span> 四川省成都市武侯区一环路南一段24号</p>
+                                <p class="mb-0" style="margin-bottom: 0;"><a href="traditional.html" class="btn btn-primary" style="display: inline-block; background-color: #a87d32; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 15px; transition: background-color 0.3s ease;">更多资讯</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 蜀锦创新设计大赛 -->
+            <div class="col-md-12 col-lg-6 col-xl-4" style="padding: 0 15px; box-sizing: border-box; flex: 0 0 100%; max-width: 100%;">
+                <div class="event-wrap d-flex ftco-animate" style="display: flex; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 30px; transition: transform 0.3s ease;">
+                    <div class="img" style="background-image: url(images/zcool_com_cn.jpg); background-size: cover; background-position: center; height: 200px; flex: 0 0 40%;"></div>
+                    <div class="text p-4 d-flex align-items-center" style="padding: 20px; flex: 0 0 60%;">
+                        <div>
+                            <span class="time" style="display: block; font-size: 14px; color: #777; margin-bottom: 10px;">2025年7月1日 - 2025年8月31日</span>
+                            <h3 style="font-size: 22px; color: #333; margin-bottom: 15px;"><a href="#" style="color: #333; text-decoration: none;">蜀锦创新设计大赛</a></h3>
+                            <div class="meta">
+                                <p style="font-size: 14px; color: #777; margin-bottom: 5px;"><span class="icon-calendar mr-1"></span> 主办单位: <a href="https://wlt.sc.gov.cn/scwlt/index.shtml" style="color: #a87d32; text-decoration: none;">成都市文化和旅游局</a></p>
+                                <p style="font-size: 14px; color: #777; margin-bottom: 5px;"><span class="icon-location"></span> 线上线下同步进行</p>
+                                <p class="mb-0" style="margin-bottom: 0;"><a href="traditional.html" class="btn btn-primary" style="display: inline-block; background-color: #a87d32; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 15px; transition: background-color 0.3s ease;">更多资讯</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+		<section class="ftco-shujin-tools img" style="background-image: url(images/tool_2.jpeg); position: relative; background-size: cover; background-position: center; padding: 150px 0; overflow: hidden;">
+    <!-- 背景遮罩 -->
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row justify-content-center align-items-center" style="flex-wrap: wrap;">
+                    <!-- 蜀锦工具图标 -->
+                    <div class="col-md-2 ftco-animate" style="text-align: center; margin-bottom: 30px;">
+                        <div class="icon" style="background: rgba(255, 255, 255, 0.9); border-radius: 50%; width: 150px; height: 150px; margin: 0 auto; display: flex; justify-content: center; align-items: center; animation: spin 5s linear infinite, pulse 2s ease-in-out infinite alternate; box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.3);">
+                            <img src="images/logo.png" alt="蜀锦工具图标" style="width: 90px; height: 90px;">
+                        </div>
+                    </div>
+                    <!-- 蜀锦工具介绍 -->
+                    <div class="col-md-10 shujin-intro pl-md-5 ftco-animate" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); padding: 40px; border-radius: 30px; border: 2px solid rgba(255, 255, 255, 0.4); box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); position: relative; z-index: 1; transform: perspective(1000px) rotateX(10deg) rotateY(-10deg); transition: transform 0.3s ease; overflow: hidden;">
+                        <span class="subheading" style="color: #FFBC52; font-weight: 800; font-size: 42px; text-shadow: 0 0 15px #FFBC52, 0 0 30px #FFBC52; display: block; margin-bottom: 15px; font-family: 'Dancing Script', cursive; letter-spacing: 2px;">蜀锦工具之秘</span>
+                        <h3 style="font-size: 24px; line-height: 1.8; color: #fff; margin-top: 25px; font-family: 'Lora', serif; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.3); position: relative;">
+                            “蜀锦的精美绝伦离不开独特的制作工具。从古老的花楼织机到精巧的挑花结本，每一件工具都蕴含着匠人们的智慧与心血。它们相互配合，穿梭于经纬之间，编织出一幅幅绚丽多彩的蜀锦画卷。”
+                        </h3>
+                        <h4 class="h5 mt-4 font-weight-bold" style="color: #FFE082; font-size: 22px; text-shadow: 0 0 10px #FFE082; font-family: 'Dancing Script', cursive; letter-spacing: 1px;"><span>技艺传承:</span> 代代相传的工具匠心</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 飘落的蜀锦碎片动画 -->
+    <div class="falling-shujin-pieces">
+        <div class="piece" style="left: 5%; animation: fall 9s linear infinite;"></div>
+        <div class="piece" style="left: 20%; animation: fall 11s linear infinite;"></div>
+        <div class="piece" style="left: 35%; animation: fall 10s linear infinite;"></div>
+        <div class="piece" style="left: 50%; animation: fall 12s linear infinite;"></div>
+        <div class="piece" style="left: 65%; animation: fall 9.5s linear infinite;"></div>
+        <div class="piece" style="left: 80%; animation: fall 10.5s linear infinite;"></div>
+        <div class="piece" style="left: 95%; animation: fall 11.5s linear infinite;"></div>
+    </div>
+    <!-- 闪烁的星光效果 -->
+    <div class="starry-background">
+        <div class="star" style="left: 12%; top: 15%; animation: twinkle 3.2s ease-in-out infinite;"></div>
+        <div class="star" style="left: 28%; top: 35%; animation: twinkle 4.2s ease-in-out infinite;"></div>
+        <div class="star" style="left: 45%; top: 8%; animation: twinkle 3.7s ease-in-out infinite;"></div>
+        <div class="star" style="left: 62%; top: 25%; animation: twinkle 4.7s ease-in-out infinite;"></div>
+        <div class="star" style="left: 78%; top: 42%; animation: twinkle 3.3s ease-in-out infinite;"></div>
+    </div>
+    <!-- 光线闪烁效果 -->
+    <div class="light-rays">
+        <div class="ray" style="left: 20%; animation: rayFlash 4s ease-in-out infinite;"></div>
+        <div class="ray" style="left: 50%; animation: rayFlash 5s ease-in-out infinite;"></div>
+        <div class="ray" style="left: 80%; animation: rayFlash 4.5s ease-in-out infinite;"></div>
+    </div>
+    <style>
+        /* 图标旋转动画 */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* 图标脉冲动画 */
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.05);
+            }
+        }
+
+        /* 蜀锦碎片飘落动画 */
+        @keyframes fall {
+            0% {
+                top: -10%;
+                opacity: 1;
+                transform: rotate(0deg);
+            }
+            100% {
+                top: 100%;
+                opacity: 0;
+                transform: rotate(360deg);
+            }
+        }
+
+        /* 星光闪烁动画 */
+        @keyframes twinkle {
+            0% {
+                opacity: 0.1;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.1;
+            }
+        }
+
+        /* 光线闪烁动画 */
+        @keyframes rayFlash {
+            0% {
+                opacity: 0.1;
+                transform: scaleY(0.5);
+            }
+            50% {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+            100% {
+                opacity: 0.1;
+                transform: scaleY(0.5);
+            }
+        }
+
+       .falling-shujin-pieces {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+       .piece {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-image: url(https://via.placeholder.com/40x40?text=Shujin+Fragment);
+            background-size: cover;
+        }
+
+       .starry-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+       .star {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #fff;
+        }
+
+       .light-rays {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+       .ray {
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+            opacity: 0.1;
+        }
+
+       .shujin-intro:hover {
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+        }
+    </style>
+</section>    
+<section class="ftco-section bg-light" id="blog-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <span class="subheading" style="color: #663300; font-weight: 600; letter-spacing: 1px; border-bottom: 2px solid #663300; padding-bottom: 5px;">蜀锦文化&nbsp;</span>
+                <h2 class="mb-4" style="color: #333; font-size: 34px; line-height: 1.2; font-weight: 700; margin-top: 15px;">蜀锦名家风采及优秀作品</h2>
+                <p style="color: #555; font-size: 17px; line-height: 1.6; margin-top: 10px;">蜀锦名家传承文化，推动创新，让古老艺术焕发新生。</p>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <!-- 贺斌及其作品 -->
+                <div class="carousel-item active">
+                    <div class="blog-entry" style="background-color: white; border-radius: 20px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12); padding: 25px; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden; position: relative;">
+                        <div class="img-wrap d-flex align-items-center" style="height: 280px; margin-bottom: 20px; border-radius: 15px; overflow: hidden;">
+                            <a href="#" class="d-block" style="width: 100%;">
+                                <img src="images/hebin-work.png" alt="贺斌作品" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                            </a>
+                        </div>
+                        <div class="text" style="padding: 0;">
+                            <h3 class="heading mb-2" style="color: #222; font-size: 24px; font-weight: 600; margin-bottom: 12px;">贺斌</h3>
+                            <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 18px;">蜀锦织造技艺传承人，复原传统蜀锦工艺。</p>
+                            <h4 class="card-subtitle heading mb-2" style="color: #333; font-size: 18px; font-weight: 500; margin-bottom: 12px;">作品：《唐团花纹锦复制品》</h4>
+                            <a href="Famous Works.html" class="btn btn-custom mt-0" style="background-color: #663300; border: none; border-radius: 25px; padding: 12px 30px; font-size: 16px; color: #fff; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;">了解更多 <span class="ion-ios-arrow-round-forward"></span></a>
+                        </div>
+                        <div class="corner-ribbon" style="position: absolute; top: 10px; right: 10px; background-color: #663300; color: white; padding: 5px 15px; font-size: 14px; border-radius: 5px 0 0 5px;">名家作品</div>
+                    </div>
+                </div>
+                <!-- 周静及其作品 -->
+                <div class="carousel-item">
+                    <div class="blog-entry" style="background-color: white; border-radius: 20px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12); padding: 25px; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden; position: relative;">
+                        <div class="img-wrap d-flex align-items-center" style="height: 280px; margin-bottom: 20px; border-radius: 15px; overflow: hidden;">
+                            <a href="#" class="d-block" style="width: 100%;">
+                                <img src="images/金面罩.jpg" alt="叶永洲作品" style="width: 100%; height: 30%; object-fit: cover; transition: transform 0.3s ease;">
+                            </a>
+                        </div>
+                        <div class="text" style="padding: 0;">
+                            <h3 class="heading mb-2" style="color: #222; font-size: 24px; font-weight: 600; margin-bottom: 12px;">叶永洲</h3>
+                            <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 18px;">蜀锦传承人</p>
+                            <h4 class="card-subtitle heading mb-2" style="color: #333; font-size: 18px; font-weight: 500; margin-bottom: 12px;">作品：《金面罩》</h4>
+                            <a href="Famous Works.html" class="btn btn-custom mt-0" style="background-color: #663300; border: none; border-radius: 25px; padding: 12px 30px; font-size: 16px; color: #fff; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;">了解更多 <span class="ion-ios-arrow-round-forward"></span></a>
+                        </div>
+                        <div class="corner-ribbon" style="position: absolute; top: 10px; right: 10px; background-color: #663300; color: white; padding: 5px 15px; font-size: 14px; border-radius: 5px 0 0 5px;">名家作品</div>
+                    </div>
+                </div>
+                <!-- 黄荣华及其作品 -->
+                <div class="carousel-item">
+                    <div class="blog-entry" style="background-color: white; border-radius: 20px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12); padding: 25px; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden; position: relative;">
+                        <div class="img-wrap d-flex align-items-center" style="height: 280px; margin-bottom: 20px; border-radius: 15px; overflow: hidden;">
+                            <a href="Famous Works.html" class="d-block" style="width: 100%;">
+                                <img src="images/pinfen_1.jpg" alt="黄荣华作品" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                            </a>
+                        </div>
+                        <div class="text" style="padding: 0;">
+                            <h3 class="heading mb-2" style="color: #222; font-size: 24px; font-weight: 600; margin-bottom: 12px;">黄荣华</h3>
+                            <p style="color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 18px;">蜀锦文化国际推广者，融入国际时尚艺术。</p>
+                            <h4 class="card-subtitle heading mb-2" style="color: #333; font-size: 18px; font-weight: 500; margin-bottom: 12px;">作品：《中西融合蜀锦屏风》</h4>
+                            <a href="Famous Works.html" class="btn btn-custom mt-0" style="background-color: #663300; border: none; border-radius: 25px; padding: 12px 30px; font-size: 16px; color: #fff; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;">了解更多 <span class="ion-ios-arrow-round-forward"></span></a>
+                        </div>
+                        <div class="corner-ribbon" style="position: absolute; top: 10px; right: 10px; background-color: #663300; color: white; padding: 5px 15px; font-size: 14px; border-radius: 5px 0 0 5px;">名家作品</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+       .carousel {
+            position: relative;
+            overflow: hidden;
+        }
+
+       .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+       .carousel-item {
+            flex: 0 0 100%;
+            max-width: 100%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+       .carousel-item.active {
+            display: flex;
+        }
+
+       .blog-entry {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+
+       .blog-entry:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+        }
+
+       .img-wrap img {
+            transition: transform 0.3s ease;
+        }
+
+       .img-wrap:hover img {
+            transform: scale(1.07);
+        }
+
+       .btn-custom {
+            background-color: #663300;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-size: 16px;
+            color: #fff;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+       .btn-custom:hover {
+            background-color: #4d2400;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+        }
+
+       .corner-ribbon {
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            /* 不需要单独隐藏箭头，因为已经移除 */
+        }
+    </style>
+
+
+<script>
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+    const intervalTime = 5000; // 自动轮播间隔时间，单位毫秒
+    let autoSlideInterval;
+
+    function showItem(index) {
+        carouselItems.forEach((item, i) => {
+            if (i === index) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    }
+
+    function nextItem() {
+        currentIndex = (currentIndex === carouselItems.length - 1) ? 0 : currentIndex + 1;
+        showItem(currentIndex);
+    }
+
+    function prevItem() {
+        currentIndex = (currentIndex === 0) ? carouselItems.length - 1 : currentIndex - 1;
+        showItem(currentIndex);
+    }
+
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextItem, intervalTime);
+    }
+
+    showItem(currentIndex);
+    startAutoSlide();
+</script>
+</section>
+<section class="ftco-section bg-light" id="product-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <span class="subheading" style="color: #663300;">蜀锦文化</span>
+                <h2 class="mb-4" style="color: #333;">领略蜀锦魅力好物</h2>
+                <p style="color: #555;">蜀锦，千年织艺瑰宝，在现代生活中焕发出独特魅力。这些精心制作的蜀锦产品，融合传统工艺与创新设计，带您领略蜀锦之美。</p>
+            </div>
+        </div>
+        <div class="product-slider">
+            <!-- 传统蜀锦服饰 -->
+            <div class="product-item">
+                <div class="img-wrap" style="background-image: url(images/shujin-16.jpg); height: 300px; background-size: cover; background-position: center;"></div>
+                <div class="text" style="text-align: center; padding: 15px;">
+                    <h3 class="heading mb-2" style="color: #333; font-size: 20px;">传统蜀锦服饰</h3>
+                    <p style="color: #555; font-size: 14px; line-height: 1.6;">色彩绚丽典雅，图案规整精美。严格依照唐代工艺复原，尺寸约100cm×80cm。</p>
+                    <a href="porduct.html" class="btn btn-primary mt-3" style="background-color: #c23616; border: none; border-radius: 6px; padding: 8px 16px; font-size: 14px; color: #fff; transition: background-color 0.3s ease;">了解更多</a>
+                </div>
+            </div>
+            <!-- 现代蜀锦家居饰品 -->
+            <div class="product-item">
+                <div class="img-wrap" style="background-image: url(images/shujin-15.jpg); height: 300px; background-size: cover; background-position: center;"></div>
+                <div class="text" style="text-align: center; padding: 15px;">
+                    <h3 class="heading mb-2" style="color: #333; font-size: 20px;">现代蜀锦家居饰品</h3>
+                    <p style="color: #555; font-size: 14px; line-height: 1.6;">简约的几何图案搭配清新的色彩，既保留蜀锦传统质感，又符合现代审美，尺寸约180cm×70cm。</p>
+                    <a href="porduct.html" class="btn btn-primary mt-3" style="background-color: #c23616; border: none; border-radius: 6px; padding: 8px 16px; font-size: 14px; color: #fff; transition: background-color 0.3s ease;">了解更多</a>
+                </div>
+            </div>
+            <!-- 蜀锦收藏珍品 -->
+            <div class="product-item">
+                <div class="img-wrap" style="background-image: url(images/shujin-13.jpg); height: 300px; background-size: cover; background-position: center;"></div>
+                <div class="text" style="text-align: center; padding: 15px;">
+                    <h3 class="heading mb-2" style="color: #333; font-size: 20px;">蜀锦收藏珍品</h3>
+                    <p style="color: #555; font-size: 14px; line-height: 1.6;">由蜀锦大师耗时数月精心创作，限量发行，尺寸约200cm×120cm。</p>
+                    <a href="porduct.html" class="btn btn-primary mt-3" style="background-color: #c23616; border: none; border-radius: 6px; padding: 8px 16px; font-size: 14px; color: #fff; transition: background-color 0.3s ease;">了解更多</a>
+                </div>
+            </div>
+            <!-- 蜀锦文创产品 -->
+            <div class="product-item">
+                <div class="img-wrap" style="background-image: url(images/shujin-14.jpg); height: 300px; background-size: cover; background-position: center;"></div>
+                <div class="text" style="text-align: center; padding: 15px;">
+                    <h3 class="heading mb-2" style="color: #333; font-size: 20px;">蜀锦文创产品</h3>
+                    <p style="color: #555; font-size: 14px; line-height: 1.6;">结合四川特色文化元素，如熊猫、三星堆等，小巧精致，方便携带。</p>
+                    <a href="porduct.html" class="btn btn-primary mt-3" style="background-color: #c23616; border: none; border-radius: 6px; padding: 8px 16px; font-size: 14px; color: #fff; transition: background-color 0.3s ease;">了解更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .product-slider {
+            display: flex;
+            overflow: hidden;
+            gap: 16px;
+        }
+
+        .product-item {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 16px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-wrap {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+        }
+
+        .text {
+            padding: 15px;
+        }
+
+        .heading {
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background-color: #c23616;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-size: 14px;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #992712;
+        }
+
+        @media (max-width: 768px) {
+            .product-slider {
+                flex-direction: column;
+            }
+
+            .product-item {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+    <script>
+        const productSlider = document.querySelector('.product-slider');
+        const productItems = document.querySelectorAll('.product-item');
+        const itemWidth = productItems[0].getBoundingClientRect().width;
+        let currentIndex = 0;
+
+        function nextItem() {
+            currentIndex = (currentIndex === productItems.length - 1) ? 0 : currentIndex + 1;
+            productSlider.style.transform = `translateX(-${currentIndex * (itemWidth + 16)}px)`;
+        }
+
+        setInterval(nextItem, 5000); // 自动轮播间隔时间，单位毫秒
+    </script>
+</section>
+
+		<section class="ftco-gallery ftco-section ftco-no-pb mb-4">
+    <div class="container-fluid px-4">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section ftco-animate text-center">
+                <h3 class="subheading"  style="color: #FED515">蜀锦艺术长廊</h3>
+                <h2 class="mb-1"  style="color: #FFF">蜀锦风华 千年织韵</h2>
+                <p class="mt-3"  style="color: #FFF">在这里，透过一幅幅精美的蜀锦作品，感受岁月沉淀的织锦魅力与文化传承。</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 ftco-animate">
+                <div class="gallery-item">
+                    <a href="images/shujin_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/shujin_1.jpg);">
+                        <div class="overlay d-flex align-items-center justify-content-center">
+                            <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-instagram"></span>
+                            </div>
+                          
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ftco-animate">
+                <div class="gallery-item">
+                    <a href="images/shujin_2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/shujin_2.jpg);">
+                        <div class="overlay d-flex align-items-center justify-content-center">
+                            <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-instagram"></span>
+                            </div>
+                         
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ftco-animate">
+                <div class="gallery-item">
+                    <a href="images/shujin_3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/shujin_3.jpg);">
+                        <div class="overlay d-flex align-items-center justify-content-center">
+                            <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-instagram"></span>
+                            </div>
+                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ftco-animate">
+                <div class="gallery-item">
+                    <a href="images/shujin_4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/shujin_4.jpg);">
+                        <div class="overlay d-flex align-items-center justify-content-center">
+                            <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                                <span class="icon-instagram"></span>
+                            </div>
+                          
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+       .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+       .gallery-item.overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+       .gallery-item:hover.overlay {
+            opacity: 1;
+        }
+
+       .gallery-item.description {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</section>
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><span>蜀锦</span> 文化</h2>
+              <p style="color: #FFF">蜀锦，中国传统丝织瑰宝，非遗技艺，色彩繁复绚丽。</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">关于我们</h2>
+              <ul class="list-unstyled">
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>人员</a></li>
+                <li><a href="../main_html/publicize.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>其他非遗</a></li>
+                <li><a href="../main_html/art.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>历史</a></li>
+                <li><a href="#" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>蜀锦</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">联系我们</h2>
+              <ul class="list-unstyled">
+				  <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>相关信息 </a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>主要成员</a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>邮箱</a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>地址</a></li>
+                <li><a href="../manage_html/index.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>管理员</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">展览时间</h2>
+              <div class="opening-hours">
+              	<p style="color: #FFF">蜀锦艺术展： <span class="mb-3">10:00 am ~ 11:30 am</span></p>
+              	<p style="color: #FFF">蜀锦相关展览会： <span class="mb-3">8:30 am ~ 11:30 am</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p style="color: #FFF">
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a target="_blank" href="index.html" title="蜀锦文化宣传页"  style="color: #FFF">蜀锦文化</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+<script>
+    // 在页面加载时从 localStorage 中获取用户名和头像路径并显示
+    window.addEventListener('load', () => {
+      const usernameDisplay = document.getElementById('username-display');
+      const avatarDisplay = document.getElementById('avatar-display');
+      const username = localStorage.getItem('username');
+      const avatar = localStorage.getItem('avatar');
+      if (username) {
+        usernameDisplay.textContent = username;
+        if (avatar) {
+          avatarDisplay.src = `uploads/${avatar}`;
+        }
+      }
+
+      // 为退出登录按钮添加点击事件
+      const logoutButton = document.getElementById('logout-button');
+      logoutButton.addEventListener('click', () => {
+        // 清除 localStorage 中的用户名和头像路径
+        localStorage.removeItem('username');
+        localStorage.removeItem('avatar');
+        // 刷新页面
+        location.reload();
+      });
+    });
+</script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script> 
+  </body>
+</html>

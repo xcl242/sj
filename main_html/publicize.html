@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>非遗宣传网页</title>
+    <!-- 引入GSAP和Three.js库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- 引入model-viewer库 -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航锚点 -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#chunwan">春晚非遗</a>
+            <a href="#resources">资源链接</a>
+            <a href="#interactive">互动体验</a>
+        </nav>
+        <a href="../main_html/index.html" target="_blank"><img src="images/logo.png" alt="Logo" class="logo"></a>
+    </header>
+
+    <!-- 动态头图区 -->
+    <section class="hero">
+        <!-- 丝绸波纹背景 -->
+        <div class="silk-bg"></div>
+        <!-- 飞天元素 -->
+        <div class="flying-apsaras">
+            <img src="images/apsara1.png" alt="飞天仙女1">
+            <img src="images/apsara2.png" alt="飞天仙女2">
+            <img src="images/apsara3.png" alt="飞天仙女3">
+        </div>
+        <!-- 粒子特效 -->
+        <canvas id="particle-canvas"></canvas>
+        <!-- 文字排版 -->
+        <div class="header-text">
+            <h1 class="main-title">
+                <span class="stroke-text">传承千年文明</span>
+                <span class="gradient-text">守护非遗瑰宝</span>
+            </h1>
+            <div class="subtitle-box">
+                <span class="subtitle-glow">2025春晚特别呈现</span>
+                <svg class="link-icon" width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                </svg>
+                <span class="subtitle-glow">国家非遗数字库直连</span>
+            </div>
+        </div>
+        <!-- 动态箭头 -->
+        <div class="arrow-down" id="scroll-to-bottom-arrow">
+            <svg class="scroll-arrow" viewBox="0 0 100 100">
+                <!-- 莫高窟卷草纹样组成的环形箭头 -->
+                <path d="M50 10 A40 40 0 0 1 90 50 A40 40 0 0 1 50 90 A40 40 0 0 1 10 50 A40 40 0 0 1 50 10" fill="none" stroke="#fff"
+                    stroke-width="4" />
+            </svg>
+        </div>
+        <!-- 前景装饰 -->
+        <div class="foreground-decor">
+            <!-- 浮动经卷 -->
+            <div class="floating-scroll">
+                <img src="images/scroll.png" alt="经卷">
+            </div>
+            <!-- 交互式纱幔 -->
+            <div class="interactive-curtain"></div>
+        </div>
+        <!-- 光影效果 -->
+        <div class="light-effect">
+            <!-- 动态投影 -->
+            <div class="dynamic-shadow"></div>
+            <!-- 时光隧道 -->
+            <div class="time-tunnel"></div>
+        </div>
+        <!-- 非遗数字库实时数据 -->
+        <div class="非遗-data">
+            <p id="非遗保护数据统计">当日非遗保护数据统计：加载中...</p>
+        </div>
+    </section>
+
+    <!-- 春晚非遗亮点区 -->
+    <section id="chunwan" class="chunwan">
+        <div class="silk-ribbon"></div>
+        <div class="carousel">
+            <!-- 春晚节目截图轮播 -->
+            <div class="carousel-inner">
+                <img src="../main_html/images/2025非遗.jpg" alt="春晚节目1">
+                <img src="../main_html/images/2025非遗2.jpg" alt="春晚节目2">
+                <img src="../main_html/images/2025非遗3.jpg" alt="春晚节目3">
+				<img src="../main_html/images/2025非遗4.jpg" alt="春晚节目4">
+            </div>
+            <button class="carousel-prev">&lt;</button>
+            <button class="carousel-next">&gt;</button>
+        </div>
+        <div class="content-layers">
+            <div class="layer">
+                <a href="silk_road.html" target="_blank"><h3 style="text-align: center;">丝绸之路专题</h3></a>
+                <!-- 敦煌壁画复原过程动图 -->
+                <div class="card">
+					    <div class="video-container">
+        <iframe src="video/丝绸之路纪录片片段.mp4" 
+                frameborder="0" 
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+				        autoplay
+        			muted>
+        </iframe>
+							</div>
+                    <div class="card-content">
+                        <h4 ><a href="https://tv.cctv.com/2025/01/31/VIDEiv9XF8Rim9y71tnTMwSX250131.shtml?spm=C55953877151.PuvgIQ6NQbQd.0.0">CCTV《新丝绸之路》纪录片</a></h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="layer">
+                <a href="spring.html" target="_blank"><h3 style="text-align: center;">非遗技艺春晚秀</h3></a>
+
+                
+<div class="card">
+    <div class="video-container">
+        <iframe src="video/2025非遗年晚会片段.mp4" 
+                frameborder="0" 
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+				        autoplay
+        			muted>
+        </iframe>
+    </div>
+	                    <div class="card-content">
+                        <h4 ><a href="https://tv.cctv.com/2010/01/14/VIDE1355591653407183.shtml?spm=C55924871139.PY8jbb3G6NT9.0.0">CCTV2025年非遗晚会</a></h4>
+                    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 非遗内容展示区 -->
+    <section id="products" class="products">
+        <div class="left-column">
+            <!-- 3D可旋转非遗藏品 -->
+            <div class="category-tags">
+                <a href="https://www.ihchina.cn/about_us/279.html">国家非遗网</a>
+                <a href="https://www.unesco.org/zh/articles/jiaokewenzuzhifeiwuzhiwenhuayichanmingluxintian63xiangyichan">世界非遗名录</a>
+                <a href="caobian.html">长春韩式草编博物馆</a>
+            </div>
+            <!-- 非遗传承人直播预告窗 -->
+        </div>
+    </section>
+    <!-- 互动体验区 -->
+	<style>
+/* 非遗主题样式 */
+:root {
+    --primary-color: #d6b47b;  /* 青铜器绿 */
+    --secondary-color: #e5d3b3; /* 陶土色 */
+    --text-color: #333;
+    --bg-gradient: linear-gradient(135deg, #f0e0c8 0%, #d6b47b 100%);
+}
+
+body {
+    font-family: 'Songti SC', serif;
+    background: var(--bg-gradient);
+}
+
+#photo-wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 25px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.photo-item:hover {
+    transform: translateY(-6px);
+}
+
+.comment-section {
+    margin-top: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.comment-form {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+#comment-text {
+    flex: 1;
+    padding: 14px 24px;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    font-size: 16px;
+    resize: none;
+    height: 90px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: #fff9f2;
+}
+
+#comment-text:focus {
+    outline: none;
+    border-color: #a87f45;
+    box-shadow: 0 0 0 4px rgba(214, 180, 123, 0.15);
+}
+
+.comment-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.comment-actions input[type="file"] {
+    display: none;
+}
+
+.photo-upload-btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.photo-upload-btn:hover {
+    background: #a87f45;
+    transform: translateY(-2px);
+}
+
+.comment-preview {
+    display: none;
+    margin-top: 12px;
+    max-width: 240px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.comment-list {
+    margin-top: 35px;
+}
+
+.comment-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #fff9e5;
+    border-radius: 18px;
+    position: relative;
+    transition: box-shadow 0.3s, transform 0.3s;
+    border: 2px solid #f8ece0;
+}
+
+.comment-item:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.comment-meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.comment-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+}
+
+.comment-time {
+    color: #666;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.pagination button {
+    padding: 12px 24px;
+    border: 2px solid var(--primary-color);
+    border-radius: 28px;
+    background: white;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.pagination button.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: #a87f45;
+    box-shadow: 0 2px 6px rgba(214, 180, 123, 0.2);
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+<section id="interactive" class="interactive">
+    <div class="ugc-content">
+        <h3 align="center" style="color: var(--primary-color); font-size: 30px; margin-bottom: 20px;">
+            非遗见闻照片墙
+        </h3>
+        <div class="photo-wall" id="photo-wall">
+            <!-- 动态加载照片 -->
+  
+        </div>
+
+        <div class="comment-section">
+            <h3 style="color: var(--primary-color); font-size: 24px; margin-bottom: 25px;">
+                分享您的见解
+            </h3>
+            <form id="comment-form">
+                <div class="comment-form">
+                    <textarea id="comment-text" placeholder="请输入评论内容（最多300字）" 
+                              maxlength="300" required></textarea>
+                    <div class="comment-actions">
+                        <label class="photo-upload-btn" for="comment-image">
+                            <span>上传照片</span>
+                            <input type="file" id="comment-image" accept="image/*">
+                        </label>
+                        <button type="submit" class="photo-upload-btn" id="but">提交</button>
+                    </div>
+                </div>
+                <img src="" alt="评论预览" class="comment-preview">
+            </form>
+
+            <div class="comment-list" id="comment-list">
+                <!-- 展示用户评论 -->
+                <div class="comment-item">
+                    <div class="comment-meta">
+                        <img src="images/OIP-C (1).jpg" class="comment-avatar" alt="用户头像">
+                        <span>用户：李华</span>
+                        <span class="comment-time">2024-05-25</span>
+                    </div>
+                    <p>这次非遗活动太有意义了，近距离感受到传统技艺的魅力，每一件作品都凝聚着匠人的心血！</p>
+                    <img src="images/col_1.jpg" alt="评论图片" class="comment-image" 
+                         style="max-width: 30%; height: 40%; margin-top: 10px; border-radius: 12px;">
+                </div>
+                <div class="comment-item">
+                    <div class="comment-meta">
+                        <img src="images/OIP-C.jpg" class="comment-avatar" alt="用户头像">
+                        <span>用户：张明</span>
+                        <span class="comment-time">2024-05-26</span>
+                    </div>
+                    <p>希望多举办这样的活动，让更多人了解和传承非遗文化，照片墙里的内容太精彩了！</p>
+                </div>
+            </div>
+
+            <div class="pagination" id="pagination">
+                <button onclick="prevPage()">← 上一页</button>
+                <button onclick="nextPage()" class="active">1</button>
+                <button onclick="nextPage()">下一页 →</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// 图片预览功能
+document.getElementById('comment-image').addEventListener('change', function(e) {
+    const preview = document.querySelector('.comment-preview');
+    if (e.target.files && e.target.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            preview.src = e.target.result;
+            preview.style.display = 'block';
+        };
+        reader.readAsDataURL(e.target.files[0]);
+    } else {
+        preview.style.display = 'none';
+    }
+});
+
+// 评论提交动画
+document.getElementById('comment-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const comment = document.getElementById('comment-text').value;
+    const image = document.getElementById('comment-image').files[0];
+    
+    // 模拟评论提交
+    const commentElement = document.createElement('div');
+    commentElement.className = 'comment-item';
+    commentElement.innerHTML = `
+        <div class="comment-meta">
+            <img src="https://via.placeholder.com/50x50?text=头" class="comment-avatar" alt="用户头像">
+            <span>游客</span>
+            <span class="comment-time">刚刚</span>
+        </div>
+        <p>${comment}</p>
+    `;
+    if (image) {
+        commentElement.innerHTML += `<img src="${URL.createObjectURL(image)}" 
+            alt="评论图片" class="comment-image" style="max-width: 100%; border-radius: 12px;">`;
+    }
+    commentElement.style.opacity = '0';
+    document.getElementById('comment-list').prepend(commentElement);
+    
+    // 动画效果
+    commentElement.animate([
+        { opacity: 0, transform: 'translateY(10px)' },
+        { opacity: 1, transform: 'translateY(0)' }
+    ], { duration: 300 });
+    
+    // 清空表单
+    this.reset();
+    document.querySelector('.comment-preview').style.display = 'none';
+});
+
+// 分页功能（示例）
+let currentPage = 1;
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        updatePagination();
+    }
+}
+
+function nextPage() {
+    currentPage++;
+    updatePagination();
+}
+
+function updatePagination() {
+    const pages = document.querySelectorAll('.pagination button');
+    pages.forEach((page, index) => {
+        if (index === 1) {
+            page.textContent = currentPage;
+            page.classList.toggle('active', index === 1);
+        }
+    });
+}
+</script>
+    <!-- 页脚区 -->
+    <footer class="footer">
+        <div class="useful-info">
+            <a href="https://www.ihchina.cn/shenbaozhinan">非遗申报指南</a>
+            <a href="https://fyrhome.cn/">非遗人之家</a>
+            <a href="https://www.mct.gov.cn/gywhb/jgsz/bjg_jgsz/202205/t20220512_932945.htm">文旅部非遗司联系方式</a>
+        </div>
+        <div class="copyright">
+            <!-- 合作媒体内容引用声明 -->
+            <!-- 浏览器兼容性提示 -->
+        </div>
+    </footer>
+
+    <!-- 展期倒计时牌 -->
+    <div class="countdown">
+        <span>展期倒计时：</span>
+        <span id="countdown-timer"></span>
+    </div>
+
+    <script src="js/script_2.js"></script>
+    <script src="js/server.js"></script>
+</body>
+
+</html>

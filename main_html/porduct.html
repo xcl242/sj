@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>历史详情</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+      
+      
+<!-- 修改后的导航栏代码 -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="45" height="46" alt=""/>&nbsp; 蜀锦文化</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav">
+            <span class="oi oi-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="../main_html/porduct.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">蜀锦产品</a></li>
+                <li class="nav-item"><a href="art.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">艺术长廊</a></li>
+                <li class="nav-item"><a href="../main_html/publicize.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">其它非遗&nbsp;</a></li>
+                
+                                           <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="user-dropdown">
+              <span id="username-display">
+                <!-- 用于显示用户名的元素 -->
+              </span>
+              <img id="avatar-display" src="../users_html/屏幕截图 2025-04-26 182655.png" alt="用户头像" width="30" height="30" style="border-radius: 50%; margin-left: 5px;">
+            </a>
+            <div class="dropdown-content">
+              <a href="login_signup.html" id="login-register-link">登录注册</a>
+              <a href="login_signup.html" id="logout-button">退出登录</a>
+              <a href="../users_html/index.html" id="change-avatar-button" onclick="changeAvatar()">个人界面</a>
+            </div>
+          </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <select id="language-select" onchange="changeLanguage()">
+                            <option value="chinese_simplified">简体中文</option>
+                            <option value="chinese_traditional">繁體中文</option>
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                            <option value="korean">Korean</option>
+                            <option value="russian">Russian</option>
+                            <option value="arabic">Arabic</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="dutch">Dutch</option>
+                        </select>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	    
+<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+<script>
+    translate.selectLanguageTag.show = false; // 不出现的select的选择语言
+    translate.service.use('client.edge'); // 设置机器翻译服务通道
+
+    function changeLanguage() {
+        const selectedLanguage = document.getElementById('language-select').value;
+        translate.changeLanguage(selectedLanguage);
+        translate.execute();
+        localStorage.setItem('selectedLanguage', selectedLanguage); // 保存选择的语言
+    }
+
+    // 页面加载时设置选择框的值和语言
+    document.addEventListener('DOMContentLoaded', function () {
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'chinese_simplified'; // 默认选择英文
+        document.getElementById('language-select').value = savedLanguage; // 设置选择框的值
+        translate.changeLanguage(savedLanguage); // 设置翻译语言
+        translate.execute(); // 执行翻译
+    });
+</script>
+      <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_4.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5 text-center">
+            <h1 class="mb-3 bread"><span>产品</span>购买</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">主页 <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="index.html#history-section">产品 <i class="ion-ios-arrow-forward"></i></a></span> <span>产品购买&nbsp; <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row">
+              <div class="page-content">
+    <div class="card">
+      <div class="content">
+          
+        <h2 class="title">蜀绣熊猫双面绣屏风&nbsp;</h2>
+        <p class="copy">&nbsp;￥208.8</p>
+        <button class="btn" onclick="purchaseProduct(1)">购买</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          
+        <h2 class="title">新中式国风竹子熊猫织锦桌旗</h2>
+        <p class="copy">￥68</p>
+        <button class="btn" onclick="purchaseProduct(2)">购买</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          
+        <h2 class="title">蜀锦熊猫丝绸画卷轴挂画</h2>
+        <p class="copy">￥265&nbsp;</p>
+        <button class="btn" onclick="purchaseProduct(3)">购买</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          
+        <h2 class="title">蜀锦中国成都特色纪念礼品</h2>
+        <p class="copy">￥18.8</p>
+        <button class="btn" onclick="purchaseProduct(4)">购买</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+         
+        <h2 class="title">蜀锦蜀绣花花熊猫家居摆件</h2>
+        <p class="copy">￥158&nbsp;</p>
+        <button class="btn" onclick="purchaseProduct(5)">购买</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+         
+        <h2 class="title">蜀绣蜀锦书签创意文化用品</h2>
+        <p class="copy">￥36&nbsp;</p>
+        <button class="btn" onclick="purchaseProduct(6)">购买</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          
+        <h2 class="title">成都特产四川蜀绣手工刺绣围巾纪念品</h2>
+        <p class="copy">￥278.56&nbsp;</p>
+        <button class="btn" onclick="purchaseProduct(7)">购买</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          
+        <h2 class="title">【成都锦礼】非遗传承蜀锦耳饰传统纹样</h2>
+        <p class="copy">￥68&nbsp;</p>
+        <button class="btn" onclick="purchaseProduct(8)">购买</button>
+      </div>
+    </div>
+            </div>
+        </div>
+
+        <script>
+            const productLinks = {
+                1: 'https://item.taobao.com/item.htm?spm=a21n57.sem.item.39.5d783903zw6ZIc&priceTId=213e058717456515265394873e1bde&utparam=%7B%22aplus_abtest%22%3A%22eab4789ed5bb98f4fb29cf81cbd1162b%22%7D&id=19083382455&ns=1&abbucket=4&xxc=taobaoSearch&pisk=gFImcEVqDZ8bAeNJygtb-ORJOga-znt6t1n96hdazQRSkhUfBdbld1AYCrtArCfPZIoYhtCkQ1X1k-TTGADfq6mtDSafQcx9bWFLvkBfEhta9kH_lvMXBd0qbfdwUY-9IvUe4N6fhhOZefzdztMMVkMr3dRaE3JMLV-wuhuyUQ9tuC5wgUlyKptwb1R2z0JpLmo27KRzEdpD_fR2gY8ydp02bh5NU8v6aK-wbbME5Bff9gP5imNqMBURYKYDTtRVHpjro3ufQQbclgJchGBq5coNqKYc49PxyqTA79TCD9riVnBhz3JGfJuMsebND3S4ak8W7g5yUset5LbGQMtXxArVEnAD8KYx3c5FEO7prgeUAnx2gNKfBvVAEifAhgXtQ4-DDaYhmHrIgCQRKGvGf5ZltOWC7Ujiig5-z27F2c9zBgus5EJWEBp1Mp2uZuKl_82oRu82FKZuE80s5EJWEBeuE2uyuL9bq',
+                2: 'https://detail.tmall.com/item.htm?spm=a21n57.sem.item.52.5d783903zw6ZIc&priceTId=213e058717456518447697099e1bde&utparam=%7B%22aplus_abtest%22%3A%22cbc1c8f5ff146b6e25f0b19a05442589%22%7D&id=894077601697&ns=1&xxc=ad_ztc&pisk=gcSEcBMeukEF6dOp-GtruQt6DjKd53Pf-gOWETXkdBAHd_tPzsdsVJKQy35y__dBRHAI4gRGn8nQpyLka6KHywOWOQ-Pesy_GoZfp9KJZSNbcj_64DKxK0voNdXMd3JnhxxgW9KJq7ksqrZVp6KGgFukEd2wFLior_YHjCvvsL0Hq_AMSKvjt3flZCYMhKooxBYojCA9KvmkqDciSLprrvmhZO2weCAkqeflIbFl9_hXne2Wx0Tok5avXIXH_0mqHiT3Mg3Sr4m2deADRonr48pe8IXH_WVmAILGeUS-e08cKZCJn6c3aQINIMbci5gBtZJPhaW3xcxCv9bDriV-rs-FaEjH7Y2Pd3Rybdj0Fqd1bB1lYF2j0UtGcExh5PFBPHJVZMCEU0fcCtspWgPqsQQBHhvP2-0yaUjP-bpGUZIR8b0y-dpwGRyNaJMCgk4YbD3-yFYDQIwpr43J-dpwGRyZy4LKmdRbpUf..',
+                3: 'https://detail.tmall.com/item.htm?spm=a21n57.sem.item.96.5d783903zw6ZIc&priceTId=213e058717456520222332982e1bde&utparam=%7B%22aplus_abtest%22%3A%227b18a7f731a4da2a0722caf8d1e6501c%22%7D&id=834111073243&ns=1&xxc=ad_ztc&pisk=gJjrDyMy7uEyTlOJritE7BtXXfK8RHyb18SBKpXdpvAkqLweYs5M-DaJVe-FiIsWNTtktD5XMDwpN8Ke-6flTeeJOBAFO9b7hlZ1eTKpxWP_flsll6ila4morJxDFL2XEVMG_rKpx5NElDY8bHCkYtWS-qvDMpJnxpfHmtvWCHvHEH22ipJt-bfht-RDLduoxQAkomvHiXmktUxDmpptqpAHZ-WDMpxHt6Yu3tc8X_CK1dYud3mB-VF3eKRGEIonbAH9rCuc6KdO0C8ksUZsYDJpUURGEIPus0O9o9LFvvneSTbO9dfoZWRd0tjlS1VjPQbwLO_FEumDVgBlSejg92fw468GqEk3LTteTnJcjJg9GiR5tg80Cc8BmGTMqZaYNetyQ6jRavohst612EIU_jAdPdKDLMei8B8h4Ghpn97Ovaln8Uvv3Cw436ySF1ruWoo-J2LDSKR_ee0KJUvv3CwjL23poK921-gc.',
+                4: 'https://item.taobao.com/item.htm?spm=a21n57.sem.item.162.5d783903zw6ZIc&priceTId=213e058717456521247811591e1bde&utparam=%7B%22aplus_abtest%22%3A%22681e1a90d6fef8a9c947f093678444d4%22%7D&id=521871253376&ns=1&abbucket=4&xxc=taobaoSearch&pisk=gT1tDaDkWkqi3Df9-NynnZiIhMz3pJAN73jsijADjJspAad07ZqVpEscYrzwsZtADMxEsObM1E9AlgUwol5m79SlPffgQIcv_IRbquVuZwQwgINu3R5rbBTJrScjGFOwOVUHAZPuZN7KSFalR7f07SkeSxGfcd9BRUKB5FtsCypBrEOj1KGsdDteAIG6hFGBRET2lAt1cX9BoFi65KT6AHTWrItfchadRH8vGnGkTrxI3nGAUeHo6mlracmG9Fp9Dj0SMjwhq0YO5lcqi6BZM3Q13jGf9FpOOaZiKAJGhaJPsaNxTCbRdBTAgzMvDLBfsB1_A79eh6sBRG4m3eBAl_RwwqN1JCK9FFpi5js5JZ6kp647aCd6ftANo4EGJ1IG76QmlvO9s9pR6QNrfnXhysLAgoPd2Z_PhpCxXgycZ_EFi0xJoAaLJxk2CezV89RJZIx1WeKuW-Dq3p2WJ34LJxk2QNLpqPUK3xJNd',
+                5: 'https://item.taobao.com/item.htm?spm=a21n57.sem.item.199.5d783903zw6ZIc&priceTId=213e058717456523499057751e1bde&utparam=%7B%22aplus_abtest%22%3A%224d273b220b40a6e8f41cb557c191da1b%22%7D&id=818095911735&ns=1&abbucket=4&xxc=taobaoSearch&pisk=gypnml0UpB5CFB0O6d6Ii37OldGTc96RUB8RyaKPzMb18WL-OQjlSnoCJbGBrCYy56QFJD9kSnT8pBhCwaqldddLew3CE38AEq3xHxKBAa6rkqUYVTqfdg2za8z8QhSCEMrY0Ol6AT6rrlerMxxBRO-Dj7SPbcjR28Pyz6Wwbi_N4WWyzN5N0iUFUU8P71SAm8yF8_yN7NsFYzWzTRkN2g4ULM8ybcjP7aWPTU-Za6P5oeTvQVT3d2zpNlKFx6b2Yw-LDdsUT2K3wr4mJGfFu6eQe8n5x6b2YN0EuJQf_31kFuwlgHRXPi8U84bWIhJegEuT9wRcqndkYvyNppteg_JqP78cKUf2L1qrqHBlrOjw30FfWdbpzpfZD-fRQKCVLChsJ_BhmUJB-u2yuhKvd19ooP7W9i6NqLi4ZafP4QFagIJTFGoJQ7N5TGsGkgTdmc0iBOYrjcVjQ6S1AAmij7N5TGsGkcmgg55FfMMG.',
+                6: 'https://item.taobao.com/item.htm?spm=a21n57.sem.item.284.5d783903zw6ZIc&priceTId=213e058717456526821262982e1bde&utparam=%7B%22aplus_abtest%22%3A%22637299be566c607ddafbacea639cadd2%22%7D&id=779911845235&ns=1&xxc=ad_ztc&pisk=gfkEDLjUgppe2u4LtAwPgzw_HZedm8-6lHk7qum-2g43KktzUVu0ZTOLd7yrSPMQRDw3rTu_WTt8RHezZ40nz7KLPz4rP0cBfK9jvDe8EU8XhKMn146n8TXhK3qg4uK_xssmuCe8EETzqhDa3833URPAZ1qgWurlE90uI5q0V8qux8xaSurAZw0orhzg4o5hEy43sOquSwbht62gIkEctu43xhogWu2ur4VHbcck_23RloVHVJX7Zsd6Eb4mxPWl3ipg9r51uTrsYku0uDDtBvHNHWzmxPWk-Y-_HzztnFOZX4cnRl3y3FymMVkzi8JFkkli0R4QnI5aLcgK3JD289Z_ayliK5SlER2_z5cr8e5L-XgaMlVG4KEslPmKKf-RSD0b8Jqg1Kxqj7cspSHBS9ymMDwIZqY1Oyc4qg7hylmrMYhFr_P3XlzXbhuyAMg2KIpNp_C8sSqalHFlw_F3XlzXbh5RwWB0brtLZ',
+                7: 'https://item.taobao.com/item.htm?spm=a21n57.sem.item.369.5d783903zw6ZIc&priceTId=213e058717456527610027977e1bde&utparam=%7B%22aplus_abtest%22%3A%229f1b4006012d4825ea43dd881b58505e%22%7D&id=521803772500&ns=1&abbucket=4&xxc=taobaoSearch&pisk=grjim6NZXN8sOfNpJMt_rtRpNMaKcFtv0N5vMIB2gdAB_VCY5ZvDtTy66ra1iwfVOFdw6RsctT1xXNU6kIDDfMQtDCF6mt5Jm7F82uB1CIt4w7h-hnDW4L02QjpwTp-vnYUyYZ61CnOquw6a-OMDAkk4bKR4KHJDUf-27Fre8B9x7I52_eleELt20sRw8DJJUcowudRUKLpvQj-2_XlenLA2gs-4KBJyTI-27sWEaB3XZ11RYW1if5l9RYxvIFAPQCWTeM9Z8xXikYM7iK8waFUi40yXIFAPQBVaacdW8tTccxiDzO75GL5Z_SAfx9SNz_PKWC7knTQcQloeXG6NzESzGq5kjsYPbeD4nOKDiHvF4-3W9MAOgGYUe0YvYgLybwUQ6EKMEsS1sxmVa9BRfes0ZXRfWLteniwroIYV4b3EzaSKcpyAYqgX7p9HwK19EJV3vHf4KJ07YFJBCk23KqgX7p9HwJ2nz28wddZh.',
+                8: 'https://item.taobao.com/item.htm?spm=a21n57.sem.item.371.5d783903zw6ZIc&priceTId=213e058717456527610027977e1bde&utparam=%7B%22aplus_abtest%22%3A%22b2e9a66e155c2c283074a5856f5bc5d7%22%7D&id=692512514221&ns=1&abbucket=4&xxc=taobaoSearch&pisk=g0aSDWOwVLvWSSupO0fq12P7_F3QC1SV7EOQs5HezH38hee0dDzU9vuQdJwIUDBozywb9RirevSnpewUTzyURWYI9WehZv5l07Vo-2BNQw_aZ7A00_2gPeFxMScwJeIq2TEOHzWNQN7BDFDVdOyUdRgCDfGtJbnKpKCjTXO-9JnpkSHmtXp-9UCfGxcn93h-pxHxOfT-JXK-DEhET3h-pDnxkxcKJXeKJsgxnXhradlCTYN5Z6EccIWdgYkXJeUjM9v8axecsrLZdAIIneTInZmjBVkXJeUjNWMJiXY1YAEiUckQHZ8SRShQhcr5CUwQ95qKcy9RaReYAJh0m9tICkFzjknfwaFjPYw_ocOJA4ZLEyiuVBfgM4e0jAmRmtcbzPoIIm9AeSPjecZQUtYKUlNYhcz23FuTj-aIXVIy8Fk6OwKBGcYIGA5fGHxhbR-0M4C5-Ti-ibgfGs9Sk0hmGA5fGhBK2jcSIs1XX11..'
+            };
+
+            function purchaseProduct(productId) {
+                const targetUrl = productLinks[productId];
+                if (targetUrl) {
+                    window.location.href = targetUrl;
+                } else {
+                    alert('该产品暂无购买链接');
+                }
+            }
+        </script>
+    </div>
+    </section> <!-- .section -->
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><span>蜀锦</span> 文化</h2>
+              <p style="color: #FFF">蜀锦，中国传统丝织瑰宝，非遗技艺，色彩繁复绚丽。</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">关于我们</h2>
+              <ul class="list-unstyled">
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>人员</a></li>
+                <li><a href="../main_html/publicize.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>其他非遗</a></li>
+                <li><a href="../main_html/art.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>历史</a></li>
+                <li><a href="#" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>蜀锦</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">联系我们</h2>
+              <ul class="list-unstyled">
+				  <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>相关信息 </a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>主要成员</a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>邮箱</a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>地址</a></li>
+                <li><a href="../manage_html/index.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>管理员</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">展览时间</h2>
+              <div class="opening-hours">
+              	<p style="color: #FFF">蜀锦艺术展： <span class="mb-3">10:00 am ~ 11:30 am</span></p>
+              	<p style="color: #FFF">蜀锦相关展览会： <span class="mb-3">8:30 am ~ 11:30 am</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p style="color: #FFF">
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a target="_blank" href="index.html" title="蜀锦文化宣传页"  style="color: #FFF">蜀锦文化</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    <script src="js/server.js"></script>
+      
+  </body>
+</html>
+    
+    

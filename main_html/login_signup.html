@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>登录注册</title>
+  <link rel="stylesheet" href="css/login_signup.css">
+</head>
+
+<body>
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>欢迎回来，</h2>
+      <!-- 将 input 类型 account 改为 text -->
+      <label>
+        <span>账号</span>
+        <input type="text" placeholder="请输入你的账号">
+      </label>
+      <label>
+        <span>密码</span>
+        <input type="password" placeholder="请输入你的密码">
+      </label>
+      <p class="forgot-pass">忘记密码?</p>
+      <!-- 添加一个用于显示登录结果的元素 -->
+      <p id="login-message"></p>
+      <button type="button" class="submit">登录</button>
+    </div>
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img__text m--up">
+          <h2>新人？</h2>
+          <p>快来注册，欣赏蜀锦之美吧！</p>
+        </div>
+        <div class="img__text m--in">
+          <h2>老朋友?</h2>
+          <p>如果已有账号, 请往登录界面. 我们非常想念你!</p>
+        </div>
+        <div class="img__btn">
+          <span class="m--up">注册</span>
+          <span class="m--in">登录</span>
+        </div>
+      </div>
+      <div class="form sign-up">
+        <h2>加入我们,</h2>
+        <label>
+          <span>昵称</span>
+          <input type="text" placeholder="请输入你的昵称">
+        </label>
+        <!-- 将 input 类型 account 改为 text -->
+        <label>
+          <span>账号</span>
+          <input type="text" placeholder="请输入你的账号">
+        </label>
+        <label>
+          <span>密码</span>
+          <input type="password" placeholder="请输入你的密码">
+        </label>
+        <!-- 添加一个用于显示注册结果的元素 -->
+        <p id="register-message"></p>
+        <button type="button" class="submit">注册</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/login_signup.js"></script>
+	<script src="js/server.js"></script>
+</body>
+
+</html>

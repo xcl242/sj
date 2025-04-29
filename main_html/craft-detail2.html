@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>纹样设计</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+<!-- 修改后的导航栏代码 -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="45" height="46" alt=""/>&nbsp; 蜀锦文化</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav">
+            <span class="oi oi-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="../main_html/porduct.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">蜀锦产品</a></li>
+                <li class="nav-item"><a href="art.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">艺术长廊</a></li>
+                <li class="nav-item"><a href="../main_html/publicize.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">其它非遗&nbsp;</a></li>
+                
+                                           <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="user-dropdown">
+              <span id="username-display">
+                <!-- 用于显示用户名的元素 -->
+              </span>
+              <img id="avatar-display" src="../users_html/屏幕截图 2025-04-26 182655.png" alt="用户头像" width="30" height="30" style="border-radius: 50%; margin-left: 5px;">
+            </a>
+            <div class="dropdown-content">
+              <a href="login_signup.html" id="login-register-link">登录注册</a>
+              <a href="login_signup.html" id="logout-button">退出登录</a>
+              <a href="../users_html/index.html" id="change-avatar-button" onclick="changeAvatar()">个人界面</a>
+            </div>
+          </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <select id="language-select" onchange="changeLanguage()">
+                            <option value="chinese_simplified">简体中文</option>
+                            <option value="chinese_traditional">繁體中文</option>
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                            <option value="korean">Korean</option>
+                            <option value="russian">Russian</option>
+                            <option value="arabic">Arabic</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="dutch">Dutch</option>
+                        </select>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	 	 
+<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+<script>
+    translate.selectLanguageTag.show = false; // 不出现的select的选择语言
+    translate.service.use('client.edge'); // 设置机器翻译服务通道
+
+    function changeLanguage() {
+        const selectedLanguage = document.getElementById('language-select').value;
+        translate.changeLanguage(selectedLanguage);
+        translate.execute();
+        localStorage.setItem('selectedLanguage', selectedLanguage); // 保存选择的语言
+    }
+
+    // 页面加载时设置选择框的值和语言
+    document.addEventListener('DOMContentLoaded', function () {
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'chinese_simplified'; // 默认选择英文
+        document.getElementById('language-select').value = savedLanguage; // 设置选择框的值
+        translate.changeLanguage(savedLanguage); // 设置翻译语言
+        translate.execute(); // 执行翻译
+    });
+</script>
+	  	  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_4.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5 text-center">
+            <h1 class="mb-3 bread"><span>纹样</span>设计</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">主页 <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="index.html#craft-section">工艺 <i class="ion-ios-arrow-forward"></i></a></span> <span>纹样设计 <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 ftco-animate">
+            <h2 class="mb-3" style="color: #DAAC5C;">蜀锦纹样设计：千年经纬间的艺术密码</h2>
+		    <p style="color: #fff;">蜀锦，不仅是丝绸技艺的巅峰之作，更是一部用丝线编织的“东方美学史”。其纹样设计融合了巴蜀文化、自然意象与哲学智慧，在方寸经纬间演绎出独特的艺术语言。以下是蜀锦纹样设计的精髓解读，展现其跨越千年的审美密码。</p>
+            <p><strong style="color: #DAAC5C;">一、纹样设计的文化基因</strong></p>
+            <p style="color: #fff;">蜀锦蕴含着深厚的地域烙印与多元交融的特色。因其受四川 “天府之国” 的山水滋养，常见云纹、水波纹、山峦叠嶂等元素，像 “流水纹” 便象征着岷江奔涌的生机。同时，古蜀图腾也被融入其中，如三星堆青铜纹样、金沙太阳神鸟等符号被抽象化运用，“太阳轮盘锦” 就暗含着古蜀文明对天象的崇拜。在多元交融方面，唐代时通过南方丝绸之路，波斯联珠纹、西域卷草纹与本土纹样相结合，形成了独特的 “陵阳公样”（对称缠枝花纹）。而宋代以后，梅兰竹菊、诗词书画化为 “字锦”“书画锦”，充分彰显了士大夫文化对蜀锦工艺的渗透 。</p>
+<p>
+          <img src="images/3.jpg" alt="" class="img-fluid">
+          </p>
+            <p><strong style="color: #DAAC5C;">二、经典纹样类型与象征</strong></p>
+			  <p style="color: #fff;">蜀锦图案丰富多样，涵盖几何万象、花鸟灵韵与祥瑞符号等多个类别。在几何万象中，方方锦以方形为骨架，嵌套回纹、万字纹，蕴含 “天圆地方，福寿绵长” 之意；雨丝锦则通过渐变色条模拟雨丝，并间饰如闪电般的金线，生动展现出 “巴山夜雨” 的诗意。花鸟灵韵方面，芙蓉锦以成都市花芙蓉为主体，搭配蝶鸟，象征着 “蓉城锦绣，富贵祥和”；百子图描绘孩童在花丛中嬉戏的场景，寄托了多子多福、家族兴旺的传统愿景。至于祥瑞符号，龙凤呈祥图案中，龙纹威仪磅礴，凤纹柔美灵动，代表阴阳和谐、权力与吉庆；八宝纹将宝瓶、法轮等佛教法器与道教暗八仙混搭，体现出川地宗教融合的特色 。</p>
+			<p><strong style="color: #DAAC5C;">三、设计工艺的精妙法则</strong></p>
+			  <p style="color: #fff;">蜀锦织造技艺中，“挑花结本” 技艺别具一格。它以丝线编制 “花本”，这一 “花本” 犹如立体纹样程序库，其中一针一线精准对应织机提综，堪称 “丝绸编程术”。一套复杂花本往往可包含上万根丝线，用以详细记录纹样走向、色彩更迭，像《五星出东方》锦的复原就极大地依赖这一技艺。在色彩运用上，蜀锦有着独特的韵律。通过分层晕染，利用经纬色线交织，能够实现 “一梭三色” 的渐变效果，如 “月华锦” 便是模仿月光晕染的典范；同时遵循 “五彩彰施，相映成趣” 的传统配色哲学，采用朱红配石青、泥金衬墨绿等对比美学，打造出鲜明且和谐的色彩组合。从空间布局看，蜀锦呈现出多样的叙事方式。“满地锦” 通幅密布花纹，尽显繁华富丽；“团窠锦” 则以中心主纹搭配四方辅纹，构建出 “众星拱月” 般的秩序感 。</p>
+			  <p><strong style="color: #DAAC5C;">蜀锦在传统与现代融合中活力满满。非遗活化上，复原 “五星出东方利中国” 锦、“陵阳公样”，融入熊猫、川剧脸谱等元素，推出创意作品。跨界演绎时，借 AI 建数字纹样库，其纹样还用于建筑、奢侈品，打破工艺局限。哲学层面，回纹体现 “轮回观”，留白呼应 “有无相生”。蜀锦纹样承载着古人对自然、生命、美的探索，如今，以古技为基、创意为翼，在传统与未来交织中续写辉煌，让这一文化瑰宝在新时代闪耀光芒、传承发展。</strong></p>
+          </div> <!-- .col-md-8 -->
+        </div>
+
+        </div>
+    </section> <!-- .section -->
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><span>蜀锦</span> 文化</h2>
+              <p style="color: #FFF">蜀锦，中国传统丝织瑰宝，非遗技艺，色彩繁复绚丽。</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">关于我们</h2>
+              <ul class="list-unstyled">
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>人员</a></li>
+                <li><a href="../main_html/publicize.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>其他非遗</a></li>
+                <li><a href="../main_html/art.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>历史</a></li>
+                <li><a href="#" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>蜀锦</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">联系我们</h2>
+              <ul class="list-unstyled">
+				  <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>相关信息 </a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>主要成员</a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>邮箱</a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>地址</a></li>
+                <li><a href="../manage_html/index.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>管理员</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">展览时间</h2>
+              <div class="opening-hours">
+              	<p style="color: #FFF">蜀锦艺术展： <span class="mb-3">10:00 am ~ 11:30 am</span></p>
+              	<p style="color: #FFF">蜀锦相关展览会： <span class="mb-3">8:30 am ~ 11:30 am</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p style="color: #FFF">
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a target="_blank" href="index.html" title="蜀锦文化宣传页"  style="color: #FFF">蜀锦文化</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

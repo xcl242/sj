@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜀锦名家：传承千年的织锦传奇</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+<!-- 修改后的导航栏代码 -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="45" height="46" alt=""/>&nbsp; 蜀锦文化</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav">
+            <span class="oi oi-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="../main_html/porduct.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">蜀锦产品</a></li>
+                <li class="nav-item"><a href="art.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">艺术长廊</a></li>
+                <li class="nav-item"><a href="../main_html/publicize.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">其它非遗&nbsp;</a></li>
+                
+                                           <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="user-dropdown">
+              <span id="username-display">
+                <!-- 用于显示用户名的元素 -->
+              </span>
+              <img id="avatar-display" src="../users_html/屏幕截图 2025-04-26 182655.png" alt="用户头像" width="30" height="30" style="border-radius: 50%; margin-left: 5px;">
+            </a>
+            <div class="dropdown-content">
+              <a href="login_signup.html" id="login-register-link">登录注册</a>
+              <a href="login_signup.html" id="logout-button">退出登录</a>
+              <a href="../users_html/index.html" id="change-avatar-button" onclick="changeAvatar()">个人界面</a>
+            </div>
+          </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <select id="language-select" onchange="changeLanguage()">
+                            <option value="chinese_simplified">简体中文</option>
+                            <option value="chinese_traditional">繁體中文</option>
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                            <option value="korean">Korean</option>
+                            <option value="russian">Russian</option>
+                            <option value="arabic">Arabic</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="dutch">Dutch</option>
+                        </select>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	 
+<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+<script>
+    translate.selectLanguageTag.show = false; // 不出现的select的选择语言
+    translate.service.use('client.edge'); // 设置机器翻译服务通道
+
+    function changeLanguage() {
+        const selectedLanguage = document.getElementById('language-select').value;
+        translate.changeLanguage(selectedLanguage);
+        translate.execute();
+        localStorage.setItem('selectedLanguage', selectedLanguage); // 保存选择的语言
+    }
+
+    // 页面加载时设置选择框的值和语言
+    document.addEventListener('DOMContentLoaded', function () {
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'chinese_simplified'; // 默认选择英文
+        document.getElementById('language-select').value = savedLanguage; // 设置选择框的值
+        translate.changeLanguage(savedLanguage); // 设置翻译语言
+        translate.execute(); // 执行翻译
+    });
+</script>
+	  	  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_4.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5 text-center">
+            <h1 class="mb-3 bread"><span>名家</span>风采</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">主页 <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="index.html#blog-section">名家风采 <i class="ion-ios-arrow-forward"></i></a></span> <span>作品 <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+
+   <div id="unique-artist-content">
+        <style>
+            #unique-artist-content {
+                font-family: "Microsoft YaHei", sans-serif;
+                background-color: #f9f5f0;
+                padding: 20px;
+            }
+
+            #unique-artist-content .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 30px;
+            }
+
+            #unique-artist-content h1 {
+                text-align: center;
+                color: #663300;
+                font-size: 36px;
+                margin-bottom: 30px;
+            }
+
+            #unique-artist-content .artist {
+                margin-bottom: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                border-bottom: 1px solid #e5e5e5;
+                padding-bottom: 40px;
+            }
+
+            #unique-artist-content .artist:last-child {
+                border-bottom: none;
+            }
+
+            #unique-artist-content .artist-image {
+                width: 300px;
+                height: auto;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-right: 30px;
+            }
+
+            #unique-artist-content .artist-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            #unique-artist-content .artist-info {
+                flex: 1;
+            }
+
+            #unique-artist-content .artist-name {
+                font-size: 28px;
+                color: #663300;
+                margin-bottom: 10px;
+            }
+
+            #unique-artist-content .artist-title {
+                font-size: 20px;
+                color: #888;
+                margin-bottom: 20px;
+            }
+
+            #unique-artist-content .artist-description {
+                font-size: 16px;
+                line-height: 1.8;
+                color: #333;
+            }
+
+            #unique-artist-content .work {
+                margin-top: 20px;
+            }
+
+            #unique-artist-content .work-title {
+                font-size: 22px;
+                color: #663300;
+                margin-bottom: 10px;
+            }
+
+            #unique-artist-content .work-description {
+                font-size: 16px;
+                line-height: 1.8;
+                color: #333;
+            }
+
+            @media (max-width: 768px) {
+                #unique-artist-content .artist {
+                    flex-direction: column;
+                }
+
+                #unique-artist-content .artist-image {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+        <div class="container">
+            <h1>蜀锦名家风采</h1>
+            <div class="artist">
+                <div class="artist-image">
+                    <img src="images/贺斌.webp" alt="贺斌">
+                </div>
+                <div class="artist-info">
+                    <h2 class="artist-name">贺斌</h2>
+                    <p class="artist-title">蜀锦织造技艺传承人</p>
+                    <p class="artist-description">
+                        贺斌自幼便对蜀锦织造技艺产生了浓厚的兴趣，在他眼中，蜀锦不仅仅是一门手艺，更是承载着千年历史文化的艺术瑰宝。他出身于蜀锦世家，从小耳濡目染，跟随长辈学习蜀锦织造的每一个环节。多年来，他刻苦钻研，不断探索传统蜀锦工艺的奥秘。
+                        <br><br>
+                        为了复原传统蜀锦工艺，贺斌付出了大量的心血。他走遍了四川的各个角落，寻访那些掌握着古老技艺的民间艺人，与他们交流心得，学习他们的经验。同时，他还查阅了大量的历史文献和资料，从古代的诗词、绘画中寻找灵感，力求还原出最纯正的蜀锦风貌。在这个过程中，他遇到了无数的困难和挑战，但他始终没有放弃。
+                    </p>
+                    <div class="work">
+                        <h3 class="work-title">代表作品：《唐团花纹锦复制品》</h3>
+                        <p class="work-description">
+                            《唐团花纹锦复制品》是贺斌的得意之作。在创作这件作品时，他严格遵循唐代蜀锦的织造工艺。从丝线的选择上，他精心挑选了优质的蚕丝，经过多道工序进行染色，使其色彩鲜艳且经久不褪色。在图案设计方面，他深入研究唐代的团花纹样，将其细腻的线条和独特的布局完美地呈现在锦缎上。
+                            <br><br>
+                            织造过程更是充满了挑战，每一根丝线都需要贺斌亲手操作。他熟练地运用挑花结本的技艺，将复杂的图案转化为织机上的指令。经过数月的努力，这件《唐团花纹锦复制品》终于诞生。它的纹理清晰，色彩绚丽，团花纹样栩栩如生，仿佛将人们带回到了繁华的唐代。这件作品不仅在国内引起了轰动，还在国际上获得了广泛的赞誉，为蜀锦传统工艺的传承和发展做出了重要贡献。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <div class="artist-image">
+                    <img src="images/叶永州.jpg" alt="周静">
+                </div>
+                <div class="artist-info">
+                    <h2 class="artist-name">叶永洲&nbsp;</h2>
+                    <p class="artist-title">蜀锦传承人</p>
+                    <p class="artist-description">
+                        男，汉族，1929年生，四川成都人。第一批国家级非物质文化遗产项目蜀锦织造技艺代表性传承人。叶永洲14岁到当时著名的蜀锦手工作坊“樊青云”号向老艺人樊青云学习蜀锦织造的传统技艺，包括挽花、丢梭等技能。三年学满出师后，仍留号上织锦；后去“熊车兴”号学习，师从熊车兴，1950年再次回到“樊青云”号工作。此后，虽历经时代变革，他始终没有中断过织锦。
+                        <br><br>
+                        叶永洲继承了前辈大师们的优点，博采众长，练就了一身投梭的好本领，将拉花和投梭时容易出现的经纬线断裂现象大大降低，并开创性地将力学和美学完美结合，使织锦具有极高的观赏性。
+                    </p>
+                    <div class="work">
+                        <h3 class="work-title">代表作品：《金面罩》</h3>
+                        <p class="work-description">
+                            三星堆文化是古蜀文明的重要代表，金面罩是三星堆文物中的经典之作。叶永洲的蜀锦《金面罩》以独特的艺术形式，再现了三星堆金面罩的风采，让人们能够通过蜀锦这一载体，感受到古蜀文明的深厚底蕴和独特魅力，是对古蜀文明的一种致敬和传承。
+                            <br><br>
+                         该作品将蜀锦这一传统工艺与三星堆文化相结合，实现了不同文化元素的融合与创新。既保留了蜀锦的传统工艺特色，又赋予了其新的文化内涵，使古老的蜀锦技艺在现代社会中焕发出新的活力，为传统文化的传承与发展提供了新的思路和途径。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <div class="artist-image">
+                    <img src="images/黄荣华.webp" alt="黄荣华">
+                </div>
+                <div class="artist-info">
+                    <h2 class="artist-name">黄荣华</h2>
+                    <p class="artist-title">蜀锦文化国际推广者</p>
+                    <p class="artist-description">
+                        黄荣华有着强烈的文化使命感，他深知蜀锦作为中国传统文化的重要代表，应该在国际舞台上展现其独特的魅力。他早年在国内外多地学习和交流，积累了丰富的文化传播经验。回国后，他全身心地投入到蜀锦文化的国际推广工作中。
+                        <br><br>
+                        为了让更多的人了解蜀锦文化，黄荣华积极组织和参与各种国内外的文化展览、艺术交流活动。他精心策划展览内容，通过展示蜀锦的精美作品、介绍蜀锦的历史文化和织造工艺，让国际友人对蜀锦有了更深入的认识。同时，他还利用现代媒体和网络平台，广泛宣传蜀锦文化，扩大了蜀锦的国际影响力。
+                    </p>
+                    <div class="work">
+                        <h3 class="work-title">代表作品：《中西融合蜀锦屏风》</h3>
+                        <p class="work-description">
+                            《中西融合蜀锦屏风》是黄荣华在推动蜀锦文化国际交流中的杰出作品。他将中国蜀锦的传统工艺与西方现代艺术的设计理念相结合，创造出了这一独特的艺术作品。在屏风的设计上，他运用了西方艺术中的几何图形和抽象元素，与蜀锦传统的花鸟、山水图案相互融合，形成了一种独特的视觉效果。
+                            <br><br>
+                            在色彩运用方面，他借鉴了西方绘画中的色彩搭配原则，使屏风的色彩更加丰富和富有层次感。在制作过程中，他邀请了国内外的艺术家和工匠共同参与，确保了作品的质量和艺术水准。这件屏风在多个国际艺术展览中展出，吸引了众多国际友人的目光，成为了传播蜀锦文化的一张亮丽名片。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><span>蜀锦</span> 文化</h2>
+              <p style="color: #FFF">蜀锦，中国传统丝织瑰宝，非遗技艺，色彩繁复绚丽。</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">关于我们</h2>
+              <ul class="list-unstyled">
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>人员</a></li>
+                <li><a href="../main_html/publicize.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>其他非遗</a></li>
+                <li><a href="../main_html/art.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>历史</a></li>
+                <li><a href="#" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>蜀锦</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">联系我们</h2>
+              <ul class="list-unstyled">
+				  <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>相关信息 </a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>主要成员</a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>邮箱</a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>地址</a></li>
+                <li><a href="../manage_html/index.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>管理员</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">展览时间</h2>
+              <div class="opening-hours">
+              	<p style="color: #FFF">蜀锦艺术展： <span class="mb-3">10:00 am ~ 11:30 am</span></p>
+              	<p style="color: #FFF">蜀锦相关展览会： <span class="mb-3">8:30 am ~ 11:30 am</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p style="color: #FFF">
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a target="_blank" href="index.html" title="蜀锦文化宣传页"  style="color: #FFF">蜀锦文化</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

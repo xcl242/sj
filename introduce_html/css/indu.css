@@ -1,0 +1,40 @@
+body {
+  font-family: 'Anonymous Pro', monospace;
+  color: #2e2e2e;
+}
+
+.container {
+  padding-top: 140px;
+}
+
+.typewritter {
+  margin: 0 auto;
+  width: 0em;
+  font-size: 3em;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #ffffffbf;
+  transform: translateY(-50%);
+  animation: typewritter 4s steps(28, end) infinite, cursor 800ms steps(28) infinite normal;
+}
+
+@keyframes typewritter {
+  form {
+    width: 0;
+  }
+  to{
+    width: 11em;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-right-color: #2e2e2e;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+/* CSS Document */
+

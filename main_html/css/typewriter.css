@@ -1,0 +1,73 @@
+.ca-search-form-container {
+  display: inline-block;
+  background-color: #006B3E;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 2rem;
+  font-family: sans-serif;
+  position: relative;
+  cursor: pointer;
+}
+
+.ca-search-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.ca-search-label {
+  color: white;
+  margin-right: 1rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.ca-search-input-container {
+  display: flex;
+}
+
+.ca-search-input,
+.ca-search-input:active,
+.ca-search-input:visited{
+  width: 25rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+  position: absolute;
+  z-index: -1;
+}
+
+.ca-replace-input-field,
+.ca-search-input:active,
+.ca-search-input:visited {
+  background-color: #006B3E;
+  z-index: 2;
+  cursor: text;
+}
+
+.ca-search-typewriter-container {
+  width: 25rem;
+  overflow: hidden;
+}
+
+.ca-search-typewriter-container * {
+  color: white;
+}
+
+#ca-typewriter-here {
+  white-space: nowrap;
+}
+
+.ca-search-button {
+  margin-left: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.ca-search-icon {
+  fill: white;
+  width: 2rem;
+}

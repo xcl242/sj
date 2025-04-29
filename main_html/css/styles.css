@@ -1,0 +1,593 @@
+/* 全局样式 */
+body {
+    font-family: '思源宋体', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: '隶书变体', cursive;
+    color: #8a3324;
+}
+
+/* 顶部导航锚点 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 增加左侧的内边距 */
+    padding: 10px 0px 10px;
+    z-index: 100;
+    border-bottom: 2px solid #003366; /* 青金石蓝作为边框色 */
+}
+
+.nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #8a3324;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #003366;
+}
+
+.logo {
+    height: 40px;
+}
+
+
+/* 动态头图区 */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.silk-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(138, 51, 36, 0.6), rgba(0, 51, 102, 0.6)), url('../images/image.jpg') center/cover no-repeat;
+  
+  z-index: -1;
+}
+
+.flying-apsaras {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flying-apsaras img {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  animation: flying 10s linear infinite;
+}
+
+@keyframes flying {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+#particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.main-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 0.1px #fff;
+  color: transparent;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ffd700, #8a3324);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.subtitle-glow {
+  text-shadow: 0 0 10px #fff;
+}
+
+.link-icon {
+  margin: 0 10px;
+  fill: #fff;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.scroll-arrow {
+  width: 50px;
+  height: 50px;
+  animation: arrow-bounce 1.5s infinite;
+}
+
+@keyframes arrow-bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.foreground-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.floating-scroll {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  animation: floating 5s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.interactive-curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/curtain.png') center/cover no-repeat;
+  opacity: 0.5;
+}
+
+.light-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.dynamic-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  filter: blur(20px);
+}
+
+.time-tunnel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+  animation: tunnel 10s linear infinite;
+}
+
+@keyframes tunnel {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.非遗-data {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #8a3324;
+}
+
+/* 春晚非遗亮点区 */
+.chunwan {
+    padding: 100px 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.silk-ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('silk_ribbon.png') repeat-y;
+    z-index: -1;
+}
+
+.carousel {
+    border: 2px solid #003366;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner img {
+	max-width: 50%; 
+	max-height: 50%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+	margin: 0 auto;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.content-layers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.layer {
+    width: 45%;
+    border: 1px solid #8a3324;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.layer h3 {
+    margin-top: 0;
+}
+
+.layer img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.3d-model-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+/* 新增卡片样式 */
+.card {
+    border: 1px solid #8a3324;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card a {
+    color: #8a3324;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #003366;
+}
+
+/* 非遗内容展示区 */
+.products {
+    display: flex;
+    padding: 100px 20px;
+    background-color: rgba(0, 51, 102, 0.1);
+}
+
+.left-column {
+    width: 50%;
+    border: 1px solid #003366;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.right-column {
+    width: 50%;
+    border: 1px solid #8a3324;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.category-tags span {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #8a3324;
+    transition: color 0.3s ease;
+}
+
+.category-tags span:hover {
+    color: #003366;
+}
+
+/* 外部资源整合区 */
+.resources {
+    padding: 100px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.database-links a {
+    display: block;
+    margin-bottom: 10px;
+    color: #8a3324;
+    transition: color 0.3s ease;
+}
+
+.database-links a:hover {
+    color: #003366;
+}
+
+.resource-map {
+    border: 2px solid #003366;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 互动体验区 */
+.interactive {
+    padding: 100px 20px;
+    background-color: rgba(138, 51, 36, 0.1);
+}
+
+.instant-interaction {
+    border: 1px solid #8a3324;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ugc-content {
+    border: 1px solid #003366;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* 页脚区 */
+.footer {
+    padding: 40px 20px;
+    background-color: #003366;
+    border-top: 2px solid #8a3324;
+    color: #fff;
+}
+
+.useful-info a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.useful-info a:hover {
+    color: #ccc;
+}
+
+/* 展期倒计时牌 */
+.countdown {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #8a3324;
+}
+
+/* 媒体查询，适应不同屏幕宽度 */
+/* 小屏幕设备，如手机 */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+
+    .nav a {
+        margin: 0 10px;
+    }
+
+    .content-layers {
+        flex-direction: column;
+    }
+
+    .layer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* 中等屏幕设备，如平板 */
+@media (min-width: 768px) and (max-width: 991px) {
+    .layer {
+        padding: 15px;
+    }
+
+    .left-column,
+    .right-column {
+        padding: 15px;
+    }
+}
+/* 互动体验区 */
+.interactive {
+    padding: 100px 20px;
+    background-color: rgba(138, 51, 36, 0.1);
+}
+
+.instant-interaction {
+    border: 1px solid #8a3324;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ugc-content {
+    border: 1px solid #003366;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+}
+
+.ugc-content h3 {
+    margin-top: 0;
+}
+
+.photo-wall {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.photo-wall img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 视频比例 */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.weibo-stream {
+    margin-top: 20px;
+    border: 1px solid #8a3324;
+    padding: 10px;
+    border-radius: 8px;
+    height: 300px;
+    overflow-y: auto;
+}

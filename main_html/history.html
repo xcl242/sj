@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>历史详情</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+<!-- 修改后的导航栏代码 -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="45" height="46" alt=""/>&nbsp; 蜀锦文化</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav">
+            <span class="oi oi-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="../main_html/porduct.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">蜀锦产品</a></li>
+                <li class="nav-item"><a href="art.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">艺术长廊</a></li>
+                <li class="nav-item"><a href="../main_html/publicize.html" class="nav-link" style="color: #FFFFFF; font-size: 15px;">其它非遗&nbsp;</a></li>
+                
+                                           <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="user-dropdown">
+              <span id="username-display">
+                <!-- 用于显示用户名的元素 -->
+              </span>
+              <img id="avatar-display" src="../users_html/屏幕截图 2025-04-26 182655.png" alt="用户头像" width="30" height="30" style="border-radius: 50%; margin-left: 5px;">
+            </a>
+            <div class="dropdown-content">
+              <a href="login_signup.html" id="login-register-link">登录注册</a>
+              <a href="login_signup.html" id="logout-button">退出登录</a>
+              <a href="../users_html/index.html" id="change-avatar-button" onclick="changeAvatar()">个人界面</a>
+            </div>
+          </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <select id="language-select" onchange="changeLanguage()">
+                            <option value="chinese_simplified">简体中文</option>
+                            <option value="chinese_traditional">繁體中文</option>
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                            <option value="korean">Korean</option>
+                            <option value="russian">Russian</option>
+                            <option value="arabic">Arabic</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="dutch">Dutch</option>
+                        </select>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	  
+<script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+<script>
+    translate.selectLanguageTag.show = false; // 不出现的select的选择语言
+    translate.service.use('client.edge'); // 设置机器翻译服务通道
+
+    function changeLanguage() {
+        const selectedLanguage = document.getElementById('language-select').value;
+        translate.changeLanguage(selectedLanguage);
+        translate.execute();
+        localStorage.setItem('selectedLanguage', selectedLanguage); // 保存选择的语言
+    }
+
+    // 页面加载时设置选择框的值和语言
+    document.addEventListener('DOMContentLoaded', function () {
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'chinese_simplified'; // 默认选择英文
+        document.getElementById('language-select').value = savedLanguage; // 设置选择框的值
+        translate.changeLanguage(savedLanguage); // 设置翻译语言
+        translate.execute(); // 执行翻译
+    });
+</script>
+	  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_4.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5 text-center">
+            <h1 class="mb-3 bread"><span>历史</span>详情</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">主页 <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="index.html#history-section">历史 <i class="ion-ios-arrow-forward"></i></a></span> <span>历史详情 <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 ftco-animate">
+            <h2 class="mb-3" style="color: #DAAC5C;">起源阶段</h2>
+		    <p style="color: #FFF;">蜀锦的起源深深植根于四川盆地得天独厚的自然禀赋与古蜀文明的早期智慧。</p>
+            <p style="color: #FFF;">早在<strong style="color: #DAAC5C;">先秦时期</strong>，这片被群山环抱的沃土便因气候温润、桑柘繁茂，孕育出悠久的养蚕缫丝传统。三星堆与金沙遗址中出土的陶纺轮、骨针，无声诉说着古蜀先民在新石器时代晚期已娴熟运用纺织技艺，而战国铜壶上的“射猎采桑图”更生动勾勒出当时织机的雏形，暗示着提花技术的萌芽。</p>
+            <p style="color: #FFF;">至<strong style="color: #DAAC5C;">秦汉大一统时代</strong>，蜀锦之名正式确立——《说文解字》以“金帛”诠释“锦”之华贵，而成都“锦官城”的设立，则标志着官方将蜀锦生产纳入国家管理体系，工匠们在锦江之畔以多综多蹑提花机织就云气瑞兽、菱纹花卉，让丝线交织出超越实用的艺术境界。这些流光溢彩的锦缎不仅沿着南方丝绸之路穿越横断山脉，成为连接中原与身毒（古印度）、西域的贸易珍品，更在《盐铁论》的记载中化作社会等级的象征，所谓“富者缛绣罗纨”道尽了它的奢华底色。</p>
+<p>
+          <img src="images/3.jpg" alt="" class="img-fluid">
+          </p>
+            <p style="color: #FFF;">两千年后，成都老官山汉墓中沉睡的提花机模型与“锦官”铭文，恰如时光的信物，印证着汉代蜀锦织造技艺的辉煌，而马山楚墓丝帛上似曾相识的纹样，则默默串联起长江流域的早期工艺交流。蜀锦的诞生，既是古蜀农耕文明与丝织技艺的结晶，亦是秦汉帝国经略西南、贯通丝路的见证，它为后世唐宋蜀锦的鼎盛铺就了锦绣初程，更在中华文明的长卷中织就了一抹永不褪色的霞光。</p>
+            <h2 class="mb-3 mt-5" style="color: #DAAC5C;">初步发展</h2>
+		    <p style="color: #FFF;">蜀锦的初步发展如一条暗涌的江河，在秦汉奠定的根基上悄然奔流。</p>
+            <p style="color: #FFF;">当历史的烽烟漫过<strong style="color: #DAAC5C;">三国鼎立的割据时代</strong>，蜀汉政权将织锦业视作维系国力的命脉——诸葛亮在《出师表》中写下“今民贫国虚，决敌之资唯仰锦耳”，成都的官营织坊彻夜不熄，机杼声与锦江流水相和，成匹的蜀锦沿着栈道翻越秦岭，化作与曹魏、孙吴贸易的硬通货，甚至远销西域。</p>
+            <p>
+              <img src="images/3.jpg" alt="" class="img-fluid">
+            </p>
+            <p style="color: #FFF;">至<strong style="color: #DAAC5C;">魏晋南北朝</strong>，乱世中的文化交融反而催生了纹样的蜕变：来自波斯联珠纹与佛教莲花纹悄然攀上锦缎，与传统的朱雀、翔云共舞，敦煌莫高窟藏经洞出土的北朝“方格兽纹锦”上，西域狮与中原麒麟在经纬交错间达成奇妙和解。</p>
+			  <h2 class="mb-3 mt-5" style="color: #DAAC5C;">成熟阶段</h2>
+			  <p style="color: #FFF;">蜀锦的成熟宛若一场蓄积千年的霞光喷薄，在盛唐的鎏金岁月里彻底绽裂。</p>
+            <p style="color: #FFF;"><strong style="color: #DAAC5C;">隋唐大一统</strong>的盛世之风让蜀锦迎来蜕变，在成都“扬一益二”的繁华中，花楼织机的发明使工匠能操控上万根丝线织出团窠对禽的盛唐气象，“陵阳公样”诞生，窦师纶设计的对雉、斗羊、翔凤纹样被推向长安宫廷与吐蕃王帐。穿越河西走廊的驼队，驮着蜀锦上霓裳羽衣的华彩去装点丝路明珠，粟特商人在撒马尔罕的壁画上记录下蜀锦包裹的东方传奇。长安城坊间胡商捧着西域琉璃杯惊叹蜀地贡锦璀璨时，成都浣花溪畔“百丈游丝争绕树”已不只是诗家意象：花楼织机巍然矗立，挽花工与织工在竹影摇曳的工坊里以纤指为梭、心血作纬，将《蜀锦谱》中记载的“天下乐”“八答晕”等数十种纹样化为流动的黄金。彼时蜀锦早已突破衣料范畴，敦煌藏经洞的《唐天宝年间交河郡市估案》中，一匹“益州半臂锦”标价等同二十石粟米，吐蕃贵族墓中出土的“对狮对马纹锦”，经纬间不仅蕴含蜀地工匠巧思，更有唐蕃会盟的暗流涌动。</p>
+		    <p style="color: #FFF;">至<strong style="color: #DAAC5C;">宋代</strong>，成都府锦院将这种奢华推向极致：院墙内三千张织机昼夜嗡鸣，院墙外“月华如练，灯市如昼”的十二月市上，客商为“灯笼锦”上金线勾勒的莲生贵子纹样一掷千金。苏东坡笔下“千丝万缕自生光”的蜀锦，随着交子的墨香沿长江东去，在汴京大相国寺的货栈里与暹罗香料、高丽青瓷同列，又在泉州港的蕃舶上化作丝绸之海的新浪。当黄昇墓出土的南宋紫绶团花锦履穿越时光，那些被珊瑚粉与孔雀羽捻入丝线的光泽，仍在诉说着蜀锦如何以一寸之幅纳万里山河——从临安画院的水墨意境到大理崇圣寺的梵钟纹饰，从西夏王妃的金冠镶边到高丽青瓷的锦囊封缄。</p>
+            <p style="color: #FFF;">此时蜀地“女郎剪下鸳鸯锦，将向中流匹晚霞”的盛景，不仅是技术的登峰造极，更是一个文明用最柔软的丝缕，超越一匹织物的命运，成为帝国经济动脉中跃动的金线，在跨越山海的文明对话里，编织出半部欧亚大陆的繁华记忆。</p>
+			  <h2 class="mb-3 mt-5" style="color: #DAAC5C;">鼎盛时期</h2>
+            <p style="color: #FFF;">蜀锦的鼎盛时期恰似银河倾落人间。</p>
+		    <p style="color: #FFF;"><strong style="color: #DAAC5C;">明朝时期</strong>，当朱棣的宝船舰队劈波斩浪，成都的织坊已用经纬线编织出另一个海上丝路。永乐年间的夕阳斜照在蜀王府织造局的蟠龙匾额上，院内五百张花楼机齐鸣的声响，竟压过了锦江春潮。匠人们以“通经断纬”的绝世技艺，将宋应星《天工开物》中记载的“画帛先描而后织”推向极致，一匹“落花流水锦”需历时三载，十万次投梭方能成就，其纹样之精妙让紫禁城内的孔雀羽线宫绣都黯然失色。此时的蜀锦早已化身大明帝国的金色名片，郑和船队的艨艟巨舰里，暹罗使者用象牙筒精心卷起的蜀锦舆图，正指引着通向满剌加的星盘；而利玛窦在《中国札记》中惊叹的“东方魔毯”，实为成都浣花溪畔织女用失传的“月华三闪”技法所造，能在不同光影下幻化出晨昏晦朔。</p>
+		    <p style="color: #FFF;"><strong style="color: #DAAC5C;">初清</strong>康乾盛世，江南三织造局争相摹仿蜀锦纹样，却始终难及成都老郎庙碑文中“寸锦寸魂”的灵韵。雍正朝《耕织图》中那些采桑女子指尖缠绕的，不仅是丝线，更是从都江堰灌溉出的文明密码。</p>
+			  <p style="color: #FFF;">那些被马可波罗称为“天堂织物”的蜀锦，早已在亚平宁教堂的祭坛上、波斯细密画的背景里，乃至江户时代大名茶室的屏风间，书写着丝绸文明最璀璨的史诗,这鼎盛非关朝代之更迭，而是千年技艺在人类指尖绽放的永恒春天。</p>
+			  <h2 class="mb-3 mt-5" style="color: #DAAC5C;">继承发展</h2>
+			  <p style="color: #FFF;">蜀锦的传承如锦江春水般从未停歇，在时光褶皱里悄然完成着生命的嬗变。</p>
+			  <p style="color: #FFF;"><strong style="color: #DAAC5C;">晚清</strong>的硝烟中，劝业道周善培在成都创办的“四川通省劝业工场”成为古老技艺的诺亚方舟，那些原本供奉皇家的“天孙机”被重新校准，织娘们将巴蜀山水与西洋写生技法糅合，织就的“芙蓉锦鸡图”竟在1915年巴拿马世博会上与福特汽车同台竞辉。</p>
+			 <p>
+              <img src="images/3.jpg" alt="" class="img-fluid">
+            </p>
+		    <p style="color: #FFF;"><strong style="color: #DAAC5C;">民国初年</strong>，锦官城的老机户在战火间隙仍守着七十二道工序，沈从文在昆明防空洞里摩挲着流亡带来的蜀锦残片，惊叹经纬间竟藏着《山海经》异兽与现代派几何的诡异共生。</p>
+		    <p style="color: #FFF;"><strong style="color: #DAAC5C;">新中国成立</strong>时的晨曦里，成都蜀锦厂老师傅用放大镜在敦煌壁画上捕捉飞天衣袂的弧度，硬是将千年经变画织成可触摸的“敦煌锦”，而故宫倦勤斋修复工程中，那些失传的“月华三闪”技法竟在老师傅布满裂痕的指尖复活，让乾隆时期的墨地金线鹤纹重现于世。</p>
+		    <p style="color: #FFF;">这缕穿越五千年的丝线始终在裂变中新生，它不仅是经纬交织的技艺，更是一个文明用最柔软的韧性书写的永生密码。</p>
+			  <h2 class="mb-3 mt-5" style="color: #DAAC5C;">现代转型</h2>
+		    <p style="color: #FFF;">蜀锦的现代转型是一场静默而炽烈的涅槃。</p>
+		    <p style="color: #FFF;"><strong style="color: #DAAC5C;">2014年</strong>，非遗传承人胡光俊在数字提花机上按下启动键的瞬间，三星堆青铜神树的纹样通过3D扫描化作百万个经纬坐标，苏州丝线里捻入的纳米材料让《太阳神鸟金箔》图案在夜间泛起幽微荧光——这并非传统的消亡，而是蚕桑文明在光纤时代的长出气根。</p>
+		    <p style="color: #FFF;"><strong style="color: #DAAC5C;">2022年</strong>搭载问天实验舱的长征五号B运载火箭，整流罩内壁竟衬着特制防辐射蜀锦，蚕丝蛋白镀层在宇宙射线中闪烁，仿佛把锦江星辉织入了深空天幕。 </p>
+            <p style="color: #FFF;">这场转型最动人的章节却藏在市井深处：银发匠人刘晨曦在直播间展示“通经断纬”绝技时，百万观众打赏的虚拟火箭与织梭齐飞。当故宫文物医院用蜀锦纳米修复技术让乾隆缂丝龙袍重焕生机，大英博物馆却派人来华学习如何用区块链溯源明代蜀锦的染料配方。</p>
+		    <p style="color: #FFF;">五千年的丝线从未断裂，只是悄然缠上了光纤与碳纤维，在人类文明的织机上，继续编织着属于东方智慧的经纬传奇。</p>
+          </div> <!-- .col-md-8 -->
+        </div>
+
+        </div>
+    </section> <!-- .section -->
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><span>蜀锦</span> 文化</h2>
+              <p style="color: #FFF">蜀锦，中国传统丝织瑰宝，非遗技艺，色彩繁复绚丽。</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">关于我们</h2>
+              <ul class="list-unstyled">
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>人员</a></li>
+                <li><a href="../main_html/publicize.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>其他非遗</a></li>
+                <li><a href="../main_html/art.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>历史</a></li>
+                <li><a href="#" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>蜀锦</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">联系我们</h2>
+              <ul class="list-unstyled">
+				  <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>相关信息 </a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>主要成员</a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>邮箱</a></li>
+                <li><a href="contact.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>地址</a></li>
+                <li><a href="../manage_html/index.html" class="py-1 d-block" style="color: #FFF"><span class="ion-ios-arrow-forward mr-3" style="color: #FFF"></span>管理员</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">展览时间</h2>
+              <div class="opening-hours">
+              	<p style="color: #FFF">蜀锦艺术展： <span class="mb-3">10:00 am ~ 11:30 am</span></p>
+              	<p style="color: #FFF">蜀锦相关展览会： <span class="mb-3">8:30 am ~ 11:30 am</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p style="color: #FFF">
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a target="_blank" href="index.html" title="蜀锦文化宣传页"  style="color: #FFF">蜀锦文化</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

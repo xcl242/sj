@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>管理注册界面</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <!-- Choices.js-->
+    <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.min.css">
+    <!-- Google fonts - Muli-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.premium.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+  <body>
+    <div class="container-fluid px-0" style="background-color: white;">
+      <div class="row min-vh-100 gx-0">
+        <div class="col-md-5 col-lg-6 col-xl-4 px-4 px-lg-5 d-flex align-items-center">
+          <div class="w-100 py-5">
+            <div class="text-center"><img class="img-fluid mb-4" src="img/logo.png" alt="..." style="max-width: 6rem;">
+              <h1 class="display-4 mb-3" style='color: #000000'>注册</h1>
+            </div>
+            <form class="login-form" method="post" action="/login">
+  <div class="mb-3">
+    <label class="form-label"style='color: #000000'>账号</label>
+    <input class="form-control" name="loginUsername" type="email" autocomplete="off" required data-validate-field="loginUsername">
+  </div>
+  <div class="mb-3">
+    <div class="row mb-2">
+      <div class="col">
+        <label class="form-label mb-0"style='color: #000000'>密码</label>
+      </div>
+      <div class="col-auto"><a class="form-text small text-muted" href="#" style='color: #000000'>忘记密码？</a></div>
+    </div>
+    <input class="form-control" name="loginPassword" type="password" required data-validate-field="loginPassword">
+  </div>
+  <!-- Submit-->
+  <button class="btn btn-lg btn-primary mb-3 w-100" type="submit">注册</button>
+  <!-- Link-->
+  <p class="text-sm text-muted text-center" style='color: #000000'>已有账号？欢迎回来 <a href="login-2.html">登录</a>.</p>
+</form>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 col-xl-8 d-none d-md-block">
+          <!-- Image-->
+          <div class="bg-cover h-100 mr-n3" style="background-image: url(img/1.jpg);"></div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-sm d-none d-md-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#style-switch" id="style-switch-button"><i class="fas fa-cog fa-2x"></i></button>
+    <div class="collapse" id="style-switch">
+      <h5 class="mb-3">选择主题颜色</h5>
+      <form class="mb-3">
+        <select class="form-select" name="colour" id="colour">
+          <option value="">选择颜色变体</option>
+          <option value="css/style.default.premium.css">粉色</option>
+          <option value="css/style.red.premium.css">红色</option>
+          <option value="css/style.green.premium.css">绿色</option>
+          <option value="css/style.violet.premium.css">紫罗兰色</option>
+          <option value="css/style.sea.premium.css">海蓝色</option>
+          <option value="css/style.blue.premium.css">蓝色</option>
+        </select>
+      </form>
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/just-validate/js/just-validate.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="js/js-cookie.js"> </script>
+    <script src="js/demo.js"> </script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+    <script>
+      function injectSvgSprite(path) {
+      
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      }
+      injectSvgSprite('icons/orion-svg-sprite.svg'); 
+      
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	  <script src="js/server.js"></script>
+	 
+  </body>
+</html>

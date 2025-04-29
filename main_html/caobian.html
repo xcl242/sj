@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>长春韩式草编博物馆</title>
+    <!-- 引入GSAP和Three.js库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- 引入model-viewer库 -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+       .products {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: auto; /* 使容器至少占满视口高度，可根据实际情况调整 */
+        }
+        /* 设置视频容器样式 */
+       .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin-top: -550px; /* 调整视频上边距 */
+            margin-bottom: 0px; /* 调整视频下边距 */
+        }
+        /* 设置视频样式 */
+        video {
+            width: 800px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部导航锚点 -->
+    <header class="header">
+        <nav class="nav">
+        </nav>
+        <a href="../main_html/index.html" target="_blank"><img src="images/logo.png" alt="Logo" class="logo"></a>
+    </header>
+
+    <!-- 非遗内容展示区 -->
+    <section class="products">
+        <div>
+            <h1><strong style="font-size: 45px;">长春韩式草柳编博物馆｜草柳编之美</strong></h1>
+            <img src="images/长春韩式草编.webp" alt="评论图片" 
+                 style="max-width: 100%; height: 100%; margin: 0 auto 10px; display: block;">
+            <p><h2 style='color:#000000'><strong>探秘长春韩式草柳编博物馆，领略非遗草柳编之美</strong></h2></p>
+            <p style="color: #000000; text-indent: 2em;  max-width: 1000px; margin: 0 auto;">在长春净月高新区，隐匿着一座充满魅力的韩式草柳编博物馆，这里是省级非物质文化遗产代表性项目 “韩氏草编” 的展示传播基地，也是领略草柳编艺术魅力的绝佳去处。</p>
+            <p style="color: #000000; text-indent: 2em;  max-width: 1000px; margin: 0 auto;">步入博物馆，仿佛踏入了一个奇妙的草柳编世界。栩栩如生的 “小动物”，灵动活泼，似乎下一秒就要跳跃起来；独具创意的生活用品，将实用与艺术完美融合；还有那些以草柳编形式呈现的 “世界名画”，令人惊叹不已。这些精美的作品，皆出自韩氏草编第四代传承人之手。在他的巧手下，草根树皮、农作物叶脉等平凡的材料，摇身一变成为了艺术创作的宝贵资源，每一个作品都生动自然、惟妙惟肖。</p>
+            <div class="video-container">
+                <video controls="controls" muted="muted" autoplay="autoplay" >
+                    <source src="video/长春韩式草编博物馆.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p style="color: #000000; text-indent: 2em; max-width: 1000px; margin: 0 auto;">韩氏草编历史悠久，传承发展近百年。上世纪初，第一代传承人韩永清随祖辈来到东北，在长春落脚后，便用东北当地的苞米叶、桦树皮、柳树条等材料编筐编篓叫卖，开启了韩氏草编的传承之路。第二代传承人韩国春继承父业，进一步发挥创意，编出了更多好看、好玩、好用的物件和装饰品。第三代传承人韩笑从中央工艺美院研修班结业后，为韩氏草编注入了新的活力，将美术技法、理论与草编传统工艺相结合，成功让韩氏草编从生活用具升级为工艺品、艺术品。</p>
+            <p style="color: #000000; text-indent: 2em; max-width: 1000px; margin: 0 auto;">到了第四代传承人韩威壮，他不仅继承了前辈们的坚守精神，更勇于创新。他对草编材料进行严格的染色、熏蒸、脱毒等工艺处理，确保环保安全；在设计作品时，既保留了草编的质朴韵味，又融入了现代时尚元素，深受大众喜爱。2023 年，技艺精湛的第五代传承人闫莉在中华老字号论坛上代表吉林省参加展演展示，让韩氏草编技艺在更大的舞台上绽放光彩。</p>
+            <p style="color: #000000; text-indent: 2em; max-width: 1000px; margin: 0 auto;">步入展馆深处，一幅以长白山原始森林为背景的乌拉草工艺画映入眼帘，这正是韩威壮先生将美术造诣与非遗技艺融合的匠心之作。他精选长白山腹地生长的乌拉草，这种经霜雪淬炼的柔韧草茎，需历经浸泡软化、消毒漂白、染色定型等二十余道工序，方能蜕变为艺术创作的载体。韩威壮运用独创的 “分层拼贴法”，将不同色泽的草片剪裁成纤毫毕现的叶片脉络，以深浅渐变的草色还原长白山四季流转，画面中蜿蜒的溪流用半透明草丝勾勒，在灯光下折射出粼粼波光，每一处细节都彰显着传统工艺与现代美学的完美碰撞。</p>
+  <p style="color: #000000; text-indent: 2em; max-width: 1000px; margin: 0 auto;">在草编艺术展区，韩式草编的创新成果令人耳目一新。团队以传统草编技法为根基，结合 3D 建模技术，赋予草编小动物鲜活的生命力。蓬松的兔子草编采用螺旋式缠绕技法，草丝疏密有致地编织出绒毛质感，红宝石般的琉璃眼睛镶嵌其中，仿佛下一秒就会蹦跳着消失在草丛间；麋鹿造型的草编作品则运用立体编织工艺，鹿角部分用天然藤条与乌拉草交织，展现出原始森林的野性之美。这些作品不仅延续了乌拉草质朴的自然气息，更通过创意设计让非遗技艺走进现代生活，成为兼具实用价值与艺术收藏价值的文化符号。</p>
+		            <img src="images/草编1.jpg" alt="评论图片" 
+                 style="max-width: 70%; height: 30%; margin: 0 auto 10px; display: block;">
+            <p style="color: #000000; text-indent: 2em; max-width: 1000px; margin: 0 auto;">2016 年，韩氏草编第四代传承人韩威壮被评为 “首届中国工美行业艺术大师”；2019 年，韩氏草编入选 “吉林省第四批省级非物质文化遗产代表性项目增补名录”；2020 年，吉林省韩氏草柳编博物馆被认定为省级非物质文化遗产 —— 韩氏草编展示传播基地；2022 年，韩威壮被评为 “中国工艺美术大师”；2025 年 1 月，韩氏草编项目代表吉林省非遗项目参与央视录制 “非遗春晚”。这一系列荣誉，见证了韩氏草编的辉煌发展。</p>
+            <p style="color: #000000; text-indent: 2em; max-width: 1000px; margin: 0 auto;">长春韩式草柳编博物馆不仅是一个展示草柳编艺术的场所，更是传承和弘扬非遗文化的重要基地。在这里，你能深切感受到草柳编艺术的独特魅力，领略非遗传承人的匠心独运。如果你对传统手工艺感兴趣，不妨来这里一探究竟，相信你一定会被草柳编之美所折服。</p>
+        </div>
+    </section>
+    <!-- 互动体验区 -->
+    <style>
+        /* 非遗主题样式 */
+        :root {
+            --primary-color: #d6b47b;  /* 青铜器绿 */
+            --secondary-color: #e5d3b3; /* 陶土色 */
+            --text-color: #333;
+            --bg-gradient: linear-gradient(135deg, #f0e0c8 0%, #d6b47b 100%);
+        }
+
+        body {
+            font-family: 'Songti SC', serif;
+            background: var(--bg-gradient);
+        }
+
+        #photo-wall {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 25px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
+        .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .photo-item:hover {
+            transform: translateY(-6px);
+        }
+
+        .comment-section {
+            margin-top: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+        .comment-form {
+            display: flex;
+            gap: 18px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        #comment-text {
+            flex: 1;
+            padding: 14px 24px;
+            border: 2px solid var(--primary-color);
+            border-radius: 30px;
+            font-size: 16px;
+            resize: none;
+            height: 90px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            background: #fff9f2;
+        }
+
+        #comment-text:focus {
+            outline: none;
+            border-color: #a87f45;
+            box-shadow: 0 0 0 4px rgba(214, 180, 123, 0.15);
+        }
+
+        .comment-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .comment-actions input[type="file"] {
+            display: none;
+        }
+
+        .photo-upload-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 28px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .photo-upload-btn:hover {
+            background: #a87f45;
+            transform: translateY(-2px);
+        }
+
+        .comment-preview {
+            display: none;
+            margin-top: 12px;
+            max-width: 240px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .comment-list {
+            margin-top: 35px;
+        }
+
+        .comment-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #fff9e5;
+            border-radius: 18px;
+            position: relative;
+            transition: box-shadow 0.3s, transform 0.3s;
+            border: 2px solid #f8ece0;
+        }
+
+        .comment-item:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .comment-meta {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 10px;
+        }
+
+        .comment-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--secondary-color);
+        }
+
+        .comment-time {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin-top: 35px;
+        }
+
+        .pagination button {
+            padding: 12px 24px;
+            border: 2px solid var(--primary-color);
+            border-radius: 28px;
+            background: white;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+
+        .pagination button.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: #a87f45;
+            box-shadow: 0 2px 6px rgba(214, 180, 123, 0.2);
+        }
+
+        /* 动画效果 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+
+    <script>
+        // 图片预览功能
+        document.getElementById('comment-image').addEventListener('change', function(e) {
+            const preview = document.querySelector('.comment-preview');
+            if (e.target.files && e.target.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(e.target.files[0]);
+            } else {
+                preview.style.display = 'none';
+            }
+        });
+
+        // 评论提交动画
+        document.getElementById('comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const comment = document.getElementById('comment-text').value;
+            const image = document.getElementById('comment-image').files[0];
+            
+            // 模拟评论提交
+            const commentElement = document.createElement('div');
+            commentElement.className = 'comment-item';
+            commentElement.innerHTML = `
+                <div class="comment-meta">
+                    <img src="https://via.placeholder.com/50x50?text=头" class="comment-avatar" alt="用户头像">
+                    <span>游客</span>
+                    <span class="comment-time">刚刚</span>
+                </div>
+                <p>${comment}</p>
+            `;
+            if (image) {
+                commentElement.innerHTML += `<img src="${URL.createObjectURL(image)}" 
+                    alt="评论图片" class="comment-image" style="max-width: 100%; border-radius: 12px;">`;
+            }
+            commentElement.style.opacity = '0';
+            document.getElementById('comment-list').prepend(commentElement);
+            
+            // 动画效果
+            commentElement.animate([
+                { opacity: 0, transform: 'translateY(10px)' },
+                { opacity: 1, transform: 'translateY(0)' }
+            ], { duration: 300 });
+            
+            // 清空表单
+            this.reset();
+            document.querySelector('.comment-preview').style.display = 'none';
+        });
+
+        // 分页功能（示例）
+        let currentPage = 1;
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePagination();
+            }
+        }
+
+        function nextPage() {
+            currentPage++;
+            updatePagination();
+        }
+
+        function updatePagination() {
+            const pages = document.querySelectorAll('.pagination button');
+            pages.forEach((page, index) => {
+                if (index === 1) {
+                    page.textContent = currentPage;
+                    page.classList.toggle('active', index === 1);
+                }
+            });
+        }
+    </script>
+    <!-- 页脚区 -->
+    <footer class="footer">
+        <div class="useful-info">
+            <a href="https://www.ihchina.cn/shenbaozhinan">非遗申报指南</a>
+            <a href="https://fyrhome.cn/">非遗人之家</a>
+            <a href="https://www.mct.gov.cn/gywhb/jgsz/bjg_jgsz/202205/t20220512_932945.htm">文旅部非遗司联系方式</a>
+        </div>
+        <div class="copyright">
+            <!-- 合作媒体内容引用声明 -->
+            <!-- 浏览器兼容性提示 -->
+        </div>
+    </footer>
+
+    <!-- 展期倒计时牌 -->
+    <div class="countdown">
+        <span>展期倒计时：</span>
+        <span id="countdown-timer"></span>
+    </div>
+
+    <script src="js/script_2.js"></script>
+    <script src="js/server.js"></script>
+</body>
+
+</html>
+    
